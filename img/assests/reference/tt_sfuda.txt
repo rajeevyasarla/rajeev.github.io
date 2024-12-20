@@ -1,0 +1,6 @@
+@article{vs2022target,
+  title={Target and task specific source-free domain adaptive image segmentation},
+  author={VS, Vibashan and Valanarasu, Jeya Maria Jose and Patel, Vishal M},
+  journal={arXiv preprint arXiv:2203.15792},
+  year={2022}
+}

@@ -1,0 +1,7 @@
+@inproceedings{vs2023instance,
+  title={Instance relation graph guided source-free domain adaptive object detection},
+  author={VS, Vibashan and Oza, Poojan and Patel, Vishal M},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={3520--3530},
+  year={2023}
+}

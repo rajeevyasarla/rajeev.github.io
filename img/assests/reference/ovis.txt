@@ -1,0 +1,7 @@
+@inproceedings{vs2023mask,
+  title={Mask-free OVIS: Open-Vocabulary Instance Segmentation without Manual Mask Annotations},
+  author={VS, Vibashan and Yu, Ning and Xing, Chen and Qin, Can and Gao, Mingfei and Niebles, Juan Carlos and Patel, Vishal M and Xu, Ran},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={23539--23549},
+  year={2023}
+}

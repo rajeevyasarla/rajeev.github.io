@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="./img/logos/jhu_web.png" />
+
+    <title>Vibashan VS: Personal Website</title>
+
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/timeline.css" rel="stylesheet">
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
+    <script src="js/modernizr.js"></script>
+    <meta name="google-site-verification" content="of5d9ckLytWKCHg9c9NZ7oTGOIP9pyZIvhsY-E1l-kY" />
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-about-me-hidden navbar-brand" href="#page-top">Vibashan VS</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <!-- <li class="page-scroll">
+                            <a href="#timeline">Timeline</a>
+                        </li> -->
+                    <li class="page-scroll">
+                        <a href="#about">Publications</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1CLr37DF3RrtJ3coGyTMtSalBahlDvkRY/view" target="_blank">CV</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-4">
+                    <img class="img-responsive img-circle" src="img/viba.jpg" alt="">
+                </div>
+                <div class="col-xs-8">
+                    <div class="intro-text">
+                        <span class="name">Vibashan VS</span>
+                        <br>
+
+                        <span class="about_me">
+                            <p style="text-align: justify;">
+                                I am a fourth-year PhD student at <a href="https://www.jhu.edu/" target="_blank"><strong>Johns Hopkins University</strong></a>, advised by <a href="https://scholar.google.com/citations?user=AkEXTbIAAAAJ&hl=en" target="_blank"><strong>Dr. Vishal M. Patel</strong></a>.
+                                My research lies at the intersection of <em>computer vision</em> and <em>natural language processing</em>, with a focus on developing advanced open-world models and multi-modal foundation models. 
+                                My long-term research goal is to develop advanced vision-agents that excel in open-world reasoning and planning, while pushing the boundaries of foundational model capabilities.
+                            </p>
+                        
+                            <p style="text-align: justify;">
+                                Currently in my PhD, I have been fortunate to intern at:
+                                <ol>
+                                    <li><a href="https://www.nvidia.com/en-us/research/" target="_blank"><strong>NVIDIA</strong></a> 
+                                        (<a href="http://nadinechang.com/" target="_blank">Nadine Chang</a>, 
+                                        <a href="https://chrisding.github.io/" target="_blank">Zhiding Yu</a>, 
+                                        <a href="https://alvarezlopezjosem.github.io/" target="_blank">Jose Alvarez</a>) 
+                                        - Multi-modal LLM for fine-grained video grounding and hallucination estimation.
+                                    </li>
+                                    <li><a href="https://www.qualcomm.com/research/artificial-intelligence/ai-research" target="_blank"><strong>Qualcomm</strong></a> 
+                                        (<a href="https://sites.google.com/view/shubhankarborse/home" target="_blank">Shubhankar</a>, 
+                                        <a href="https://scholar.google.com.au/citations?user=Mx8MbWYAAAAJ&hl=en" target="_blank">Munawar</a>, 
+                                        <a href="https://www.porikli.com/" target="_blank">Fatih Porikli</a>) 
+                                        - Enabling SAM for Open-Vocabulary Panoptic Segmentation.
+                                    </li>
+                                    <li><a href="https://www.salesforceairesearch.com/" target="_blank"><strong>Salesforce</strong></a> 
+                                        (<a href="https://ningyu1991.github.io/" target="_blank">Ning Yu</a>, 
+                                        <a href="https://scholar.google.com/citations?user=tAUdLM0AAAAJ&hl=en" target="_blank">Chen Xing</a>, 
+                                        <a href="https://fly6464.github.io/" target="_blank">Mingfei Gao</a>, 
+                                        <a href="http://www.niebles.net/" target="_blank">Juan Carlos</a>, 
+                                        <a href="https://scholar.google.com/citations?user=sgBB2sUAAAAJ&hl=en" target="_blank">Ran Xu</a>) 
+                                        - Data-Efficient Open-Vocabulary Instance Segmentation.
+                                    </li>
+                                </ol>
+                            </p>
+                        
+                            <p style="text-align: justify;">
+                                Before joining Hopkins, during my undergraduate I interned at <a href="https://www.mbrdi.co.in/" target="_blank"><strong>Mercedes-Benz Research & Development India (MBRDI)</strong></a> and <a href="https://www.nus.edu.sg/" target="_blank"><strong>National University of Singapore</strong></a>.
+                            </p>
+                        
+                            <p style="text-align: justify;">
+                                Currently, I am on the job market. Feel free to reach out to me at <b>vibashanvs@gmail.com</b>.
+                            </p>
+                        </span>
+                        
+                        <hr>
+                        <span class="skills">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="https://scholar.google.com/citations?user=JalMe6QAAAAJ&hl=en"
+                                        class="btn-social btn-outline" target="_blank"><i class="ai ai-google-scholar"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.linkedin.com/in/vibashan-vs-23321b142" class="btn-social btn-outline" target="_blank"><i
+                                            class="fa fa-fw fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.semanticscholar.org/author/V.-Vibashan/51005492" class="btn-social btn-outline" target="_blank"><i class="ai ai-semantic-scholar"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/Vibashan" class="btn-social btn-outline" target="_blank"><i
+                                            class="fa fa-fw fa-github"></i></a>
+                                </li>
+                                <li>
+                                    <a href="https://x.com/vibashan" class="btn-social btn-outline" target="_blank"><i
+                                            class="fa fa-fw fa-twitter"></i></a>
+                                </li>
+                            </ul>
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="affilition">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Affiliations</h2>
+                    <hr class="light">
+                </div>
+            </div>
+            <ul class="affiliation-list row">
+                 <li class="col-sm-3 col-xs-6">
+                    <a class="btn-affl">
+                        <img class="affilition logo" src="img/logos/nvidia.png" style="width: 170px; height: 110px;"/>
+                    </a><br>
+                    NVIDIA<br>
+                    (Summer 2024 - Present)
+                </li>
+                <li class="col-sm-3 col-xs-6">
+                    <a class="btn-affl">
+                        <img class="affilition logo" src="img/logos/Qualcomm.png" style="width: 170px; height: 110px;"/>
+                    </a><br>
+                    Qualcomm<br>
+                    (Summer 2023)
+                </li>
+                <li class="col-sm-3 col-xs-6">
+                    <a class="btn-affl">
+                        <img class="affilition logo" src="img/logos/Salesforce.png" style="width: 170px; height: 110px;"/>
+                    </a><br>
+                    Salesforce<br>
+                    (Summer 2022)
+                </li>
+                <li class="col-sm-3 col-xs-6">
+                    <a
+                        class="btn-affl"><img class="affilition logo" src="img/logos/jhu.png"style="width: 185px; height: 110px;"/></a><br>
+                    Johns Hopkins<br>
+                    (2021 - Present)
+                </li>
+                <li class="col-sm-3 col-xs-6">
+                    <a class="btn-affl">
+                        <img class="affilition logo" src="img/logos/benz.jpg" style="width: 150px; height: 110px;"/></a><br>
+                    Mercedes R&D <br>
+                    (2020-2021)
+                </li>
+                <li class="col-sm-3 col-xs-6">
+                    <a class="btn-affl">
+                        <img class="affilition logo" src="img/logos/nus.png" style="width: 185px; height: 110px;"/>
+                    </a><br>
+                    NUS  <br>
+                    (Summer 2019)<br>
+                </li>
+                <li class="col-sm-3 col-xs-6">
+                    <a class="btn-affl">
+                        <img class="affilition logo" src="img/logos/iitm.png" style="width: 110px; height: 110px;"/>
+                    </a><br>
+                    IIT-Madras<br>
+                    (Summer 2018)
+                </li>
+                <li class="col-sm-3 col-xs-6">
+                    <a class="btn-affl">
+                        <img class="affilition logo" src="img/logos/nitt.png" style="width: 115px; height: 110px;"/>
+                    </a><br>
+                    NIT-Trichy<br>
+                    (2016 - 2020)
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="news-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>News</h2>
+                    <hr class="light">
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">May 2024</div>
+                    <div class="col-xs-8"><b>Research intern at <span style="color: #E73916">NVIDIA </span> for summer 2024!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Feb 2024</div>
+                    <div class="col-xs-8"><b>One paper accepted in <span style="color: #E73916">MIDL 2024</span>!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Feb 2024</div>
+                    <div class="col-xs-8"><b>One paper accepted in <span style="color: #E73916">CVPR 2024</span>!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Dec 2023</div>
+                    <div class="col-xs-8"><b>One paper accepted in <span style="color: #E73916">AAAI 2024</span>!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Aug 2023</div>
+                    <div class="col-xs-8"><b>Honorable Mention for <span style="color: #E73916">MICCAI 2023</span> Reviewer!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Jun 2023</div>
+                    <div class="col-xs-8"><b>Research intern at <span style="color: #E73916">Qualcomm</span> for summer 2023!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Mar 2023</div>
+                    <div class="col-xs-8"><b>Two papers accepted in <span style="color: #E73916">CVPR 2023</span>!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Feb 2023</div>
+                    <div class="col-xs-8"><b>One paper accepted in <span style="color: #E73916">MIDL 2023</span>!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Oct 2021</div>
+                    <div class="col-xs-8"><b>One paper accepted in <span style="color: #E73916">ICASSP 2023</span>!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Oct 2022</div>
+                    <div class="col-xs-8"><b>One paper accepted in <span style="color: #E73916">WACV 2023</span>!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Jan 2022</div>
+                    <div class="col-xs-8"><b>Research intern at <span style="color: #E73916">Salesforce</span> for summer 2022!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Oct 2021</div>
+                    <div class="col-xs-8"><b>Two papers accepted in <span style="color: #E73916">ICIP 2022</span>!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Oct 2021</div>
+                    <div class="col-xs-8"><b>One paper accepted in <span style="color: #E73916">WACV 2022</span>!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Jul 2021</div>
+                    <div class="col-xs-8"><b>One paper accepted in <span style="color: #E73916">CVPR 2021</span>!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">May 2021</div>
+                    <div class="col-xs-8"><b>Joined <span style="color: #E73916">Johns Hopkins University</span> for my Ph.D!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Jul 2020</div>
+                    <div class="col-xs-8"><b>One paper accepted in <span style="color: #E73916">Medical Image Analysis (MedIA) 2020</span>!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Jun 2020</div>
+                    <div class="col-xs-8"><b>Joined <span style="color: #E73916">Mercedes-Benz Research and Development India</span> as research intern!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">Jan 2020</div>
+                    <div class="col-xs-8"><b>One paper accepted in <span style="color: #E73916">ICRA 2020</span>!</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4 news-date">May 2019</div>
+                    <div class="col-xs-8"><b>Joined <span style="color: #E73916">National University of Singapore</span> as research intern!</b></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Selected Publications</h2>
+                    <hr class="light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/sam/Archi_v3.jpg" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong> PosSAM: Panoptic Open-vocabulary Segment Anything</strong></div>
+                    <div class="puba"> <b>Vibashan VS</b>, Shubhankar Borse, Hyojin Park, Debasmit Das, Vishal Patel, Munawar Hayat, Fatih Porikli</div>
+                    <div class="pubv"><b>Arxiv 2024</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="https://arxiv.org/pdf/2403.09620" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <li><a href="https://vibashan.github.io/possam-web/" target="_blank" style="color:green;"><b>Project Page</b></a></li>
+                            <li><a href="https://github.com/Vibashan/PosSAM" target="_blank" style="color:red;"><b>Code</b></a></li>
+                            <li><a href="./img/assests/reference/sam.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/refseg/refseg.png" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong> LQMFormer: Language-aware Query Mask Transformer for Referring Image Segmentation</strong></div>
+                    <div class="puba"> Nisarg Shah, <b>Vibashan VS</b>, Vishal Patel</div>
+                    <div class="pubv"><b>CVPR 2024</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Shah_LQMFormer_Language-aware_Query_Mask_Transformer_for_Referring_Image_Segmentation_CVPR_2024_paper.pdf" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <li><a href="" target="_blank" style="color:red;"><b>Code</b></a></li>
+                            <li><a href="./img/assests/reference/refseg.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/facex/main_archi.png" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong> FaceXFormer: A Unified Transformer for Facial Analysis</strong></div>
+                    <div class="puba">  Kartik Narayan, <b>Vibashan VS</b>, Rama Chellappa, Vishal Patel</div>
+                    <div class="pubv"><b>Arxiv 2024</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="https://arxiv.org/pdf/2403.12960" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <li><a href="https://kartik-3004.github.io/facexformer_web/" target="_blank" style="color:green;"><b>Project Page</b></a></li>
+                            <li><a href="https://github.com/Kartik-3004/facexformer" target="_blank" style="color:red;"><b>Code</b></a></li>
+                            <li><a href="./img/assests/reference/facex.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/ovis/ovis.png" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong> Mask-Free OVIS: Open-Vocabulary Instance Segmentation Without Manual Mask Annotations</strong></div>
+                    <div class="puba"> <b>Vibashan VS</b>, Ning Yu, Chen Xing, Can Qin, Mingfei Gao, Juan Carlos Niebles, Vishal M. Patel, Ran Xu</div>
+                    <div class="pubv"><b>CVPR 2023</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/VS_Mask-Free_OVIS_Open-Vocabulary_Instance_Segmentation_Without_Manual_Mask_Annotations_CVPR_2023_paper.pdf" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <li><a href="https://vibashan.github.io/ovis-web/" target="_blank" style="color:green;"><b>Project Page</b></a></li>
+                            <li><a href="https://github.com/Vibashan/Mask-free-OVIS" target="_blank" style="color:red;"><b>Code</b></a></li>
+                            <li><a href="./img/assests/reference/ovis.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/IRG/Archi.png" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong> Instance Relation Graph Guided Source-Free Domain Adaptive Object Detection</strong></div>
+                    <div class="puba"> <b>Vibashan VS</b>, Poojan Oza, Vishal Patel</div>
+                    <div class="pubv"><b>CVPR 2023</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="https://openaccess.thecvf.com/content/CVPR2023/papers/VS_Instance_Relation_Graph_Guided_Source-Free_Domain_Adaptive_Object_Detection_CVPR_2023_paper.pdf" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <li><a href="https://viudomain.github.io/irg-sfda-web/" target="_blank" style="color:green;"><b>Project Page</b></a></li>
+                            <li><a href="https://github.com/Vibashan/irg-sfda" target="_blank" style="color:red;"><b>Code</b></a></li>
+                            <li><a href="./img/assests/reference/irg.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/IRG/Archi_online.png" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong> Towards Online Domain Adaptive Object Detection</strong></div>
+                    <div class="puba"> <b>Vibashan VS</b>, Poojan Oza, Vishal Patel</div>
+                    <div class="pubv"><b>WACV 2023</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="https://arxiv.org/pdf/2204.05289" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <li><a href="https://github.com/Vibashan/memXformer-online-da" target="_blank" style="color:red;"><b>Code</b></a></li>
+                            <li><a href="./img/assests/reference/online_da.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/tt_sfuda/src-UNet-1.png" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong> Target and Task specific Source-Free Domain Adaptive Image Segmentation</strong></div>
+                    <div class="puba"> <b>Vibashan VS</b>, Jeya Maria Jose, Vishal Patel</div>
+                    <div class="pubv"><b>MIDL 2024</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <li><a href="https://viudomain.github.io/tt-sfuda-web/" target="_blank" style="color:green;"><b>Project Page</b></a></li>
+                            <li><a href="https://github.com/Vibashan/tt-sfuda" target="_blank" style="color:red;"><b>Code</b></a></li>
+                            <li><a href="./img/assests/reference/tt_sfuda.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/on_fly/Intro-1.png" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong> On-the-Fly Test-time Adaptation for Medical Image Segmentation</strong></div>
+                    <div class="puba"> Jeya Maria Jose, Pengfei Guo, <b>Vibashan VS</b>, Vishal Patel</div>
+                    <div class="pubv"><b>MIDL 2023</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="https://arxiv.org/abs/2203.05574" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <li><a href="https://github.com/jeya-maria-jose/On-The-Fly-Adaptation" target="_blank" style="color:red;"><b>Code</b></a></li>
+                            <li><a href="./img/assests/reference/midl.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/thermal_uda/archi.png" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong> Meta-UDA: Unsupervised Domain Adaptive Thermal Object Detection using Meta-Learning</strong></div>
+                    <div class="puba"> <b>Vibashan VS</b>, Domenick Poster, Suya You, Shuowen Hu, Vishal Patel</div>
+                    <div class="pubv"><b>WACV 2022</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="https://openaccess.thecvf.com/content/WACV2022/html/VS_Meta-UDA_Unsupervised_Domain_Adaptive_Thermal_Object_Detection_Using_Meta-Learning_WACV_2022_paper.html" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <!-- <li><a href="https://xiaoming-zhao.github.io/projects/pointnav-vo/" target="_blank" style="color:green;"><b>Project Page</b></a></li> -->
+                            <li><a href="./img/assests/reference/meta_uda.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/cvpr/cvpr.png" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong> MeGA-CDA: Memory Guided Attention for Category-Aware Unsupervised Domain Adaptive Object Detection</strong></div>
+                    <div class="puba"> <b>Vibashan VS</b>, Vikram Gupta, Poojan Oza, Vishwanath A. Sindagi, Vishal Patel</div>
+                    <div class="pubv"><b>CVPR 2021</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="https://openaccess.thecvf.com/content/CVPR2021/html/VS_MeGA-CDA_Memory_Guided_Attention_for_Category-Aware_Unsupervised_Domain_Adaptive_Object_CVPR_2021_paper.html" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <li><a href="https://viudomain.github.io/mega-web/" target="_blank" style="color:green;"><b>Project Page</b></a></li>
+                            <li><a href="./img/assests/reference/mega.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/IFT/IFT.gif" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong> Image Fusion Transformer</strong></div>
+                    <div class="puba"> <b>Vibashan VS</b>, Jeya Maria Jose, Poojan Oza, Vishal Patel</div>
+                    <div class="pubv"><b>ICIP 2021</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="https://arxiv.org/abs/2107.09011" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <li><a href="https://github.com/Vibashan/Image-Fusion-Transformer" target="_blank" style="color:red;"><b>Code</b></a></li>
+                            <li><a href="./img/assests/reference/ift.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/Sal/sal.gif" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong>ST-MTL: Spatio-Temporal multitask learning model to predict scanpath while tracking instruments in robotic surgery</strong></div>
+                    <div class="puba"> Mobarakol Islam, <b>Vibashan VS</b>, Chwee MingLim, Hongliang Ren</div>
+                    <div class="pubv"><b>MedIA 2021</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="https://www.sciencedirect.com/science/article/pii/S1361841520302012" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <li><a href="https://github.com/Vibashan/ST-MTL" target="_blank" style="color:red;"><b>Code</b></a></li>
+                            <li><a href="./img/assests/reference/st_mtl.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/Detect/ap_mtl.gif" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong>AP-MTL: Attention Pruned Multi-task Learning Model for Real-time Instrument Detection and Segmentation in Robot-assisted Surgery</strong></div>
+                    <div class="puba"> Mobarakol Islam, <b>Vibashan VS</b>, Hongliang Ren</div>
+                    <div class="pubv"><b>ICRA 2020</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="https://ieeexplore.ieee.org/document/9196905" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <li><a href="https://github.com/Vibashan/AP-MTL" target="_blank" style="color:red;"><b>Code</b></a></li>
+                            <li><a href="./img/assests/reference/ap_mtl.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <img class="img-responsive" src="img/assests/BraTS/brats.gif" style="width: 300px; height: 140px;" alt="">
+                </div>
+                <div class="col-sm-8 col-xs-12">
+                    <div class="pubt"><strong>Brain Tumor Segmentation and Survival Prediction Using 3D Attention UNet</strong></div>
+                    <div class="puba"> Mobarakol Islam, <b>Vibashan VS</b>, Jeya Maria Jose, Navodini Wijethilake, Uppal Utkarsh, Hongliang Ren</div>
+                    <div class="pubv"><b>MICCAI 2019 - BraTS Workshop</b> </div>
+                    <div class="publ">
+                        <ul>
+                            <li><a href="https://arxiv.org/abs/2104.00985" target="_blank" style="color:blue;"><b>PDF</b></a></li>
+                            <li><a href="https://github.com/Vibashan/3D_Attention_UNet" target="_blank" style="color:red;"><b>Code</b></a></li>
+                            <li><a href="./img/assests/reference/3d_unet.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Talks</h2>
+                    <hr class="light">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                <div class="pubt">Known unknowns: Learning novel concepts using reasoning-by-elimination (UAI Oral Talk)</div>
+                <br>
+                <iframe src="https://drive.google.com/file/d/1aqM2XWzicxCGEe6BbVHKozkmdvvUd2kp/preview"
+                    width="480" height="320" allowfullscreen></iframe>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </section> -->
+
+
+    <!-- Portfolio Grid Section -->
+    <section id="projects">
+        <div class="">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Projects</h2>
+                    <hr class="light">
+                </div>
+            </div>
+            <div class="band">
+                <!-- <div class="item-1">
+                    <a href="#EvalAI" class="card portfolio-link" data-toggle="modal">
+                        <div class="thumb"
+                            style="width: 400px; background-image: url(https://raw.githubusercontent.com/Cloud-CV/EvalAI/master/docs/source/_static/img/evalai_logo.png);">
+                        </div>
+                        <article class="article">
+                            <h1>EvalAI</h1>
+                            <p>An open source platform to create, collaborate and participate in the AI Challenges. By
+                                simplifying and standardizing the process of
+                                benchmarking AI, we want to circumvent many of the factors impeding the rate of progress
+                                in AI.</p>
+                            <span>Georgia Tech</span>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2">
+                    <a href="#Fabrik" class="card portfolio-link">
+                        <div class="thumb" style="background-image: url(img/Fabrik.png);"></div>
+                        <article class="article">
+                            <h1>Fabrik</h1>
+                            <p>An online collaborative platform to build, visualize and train deep learning models via a
+                                simple drag-and-drop interface.</p>
+                            <span>Georgia Tech</span>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-3">
+                    <a href="#Origami" class="card portfolio-link" data-toggle="modal">
+                        <div class="thumb" style="background-image: url(img/Origami.jpg);"></div>
+                        <article class="article">
+                            <h1>Origami</h1>
+                            <p>A tool to allow researchers to automagically convert their deep learning models into an
+                                online service in a few simple steps.</p>
+                            </p>
+                            <span>Georgia Tech</span>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-4">
+                    <a href="#CloudCV" class="card portfolio-link" data-toggle="modal">
+                        <div class="thumb" style="background-image: url(img/cloudcv.png);"></div>
+                        <article class="article">
+                            <h1>CloudCV</h1>
+                            <p>A collection of open-source platforms that aims to make research more reproducible.</p>
+                            <span>Georgia Tech</span>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-5">
+                    <a href="#Garuda" class="card portfolio-link" data-toggle="modal">
+                        <div class="thumb" style="background-image: url(img/garuda.jpg)"></div>
+                        <article class="article">
+                            <h1>Garuda</h1>
+                            <p>An Unmanned Aerial Vehicle capable of
+                                performing autonomous flight & surveillance.</p>
+                            <span>UAS-DTU</span>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-6">
+                    <a href="#Aarush" class="card portfolio-link" data-toggle="modal">
+                        <div class="thumb" style="background-image: url(img/Arush_X1.JPG);"></div>
+                        <article class="article">
+                            <h1>Aarush X-1</h1>
+                            <p>An indigenously developed UAV developed under the mentorship of Lockheed Martin </p>
+                            <span>UAS-DTU</span>
+                        </article>
+                    </a>
+                </div> -->
+                <div class="item-7">
+                    <a href="#AMTChat" class="card portfolio-link" data-toggle="modal">
+                        <div class="thumb" style="background-image: url(img/projects/vision_nitt.png);"></div>
+                        <article class="article">
+                            <h1>VisionNITT</h1>
+                            <p>Implemented deep learning guided security system at the entrance of NIT-Trichy for a hackathon.</p>
+                            <span>NIT-Trichy, 2019</span>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-8">
+                    <a href="#NoteWorthy" class="card portfolio-link" data-toggle="modal">
+                        <div class="thumb" style="background-image: url(img/projects/tgp.png);"></div>
+                        <article class="article">
+                            <h1>Target Guarding Problem</h1>
+                            <p>Developed a real-time package for controlling multiple Non-Holonomic drive robots with OptiTrack motion capture system using ROS. </p>
+                            <span>M Hacks, 2018</span>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-9">
+                    <a href="#Mobishare" class="card portfolio-link" data-toggle="modal">
+                        <div class="thumb" style="background-image: url(img/projects/agro_bot.png);"></div>
+                        <article class="article">
+                            <h1>AgroBot</h1>
+                            <p>Implemented SLAM and path planning alogorithms using ROS gmapping and navigation stack for an autonomous indoor farming bot.</p>
+                            <span>Spider R&D, 2017</span>
+                        </article>
+                    </a>
+                </div>
+
+                <div class="item-10">
+                    <a href="#Trippr" class="card portfolio-link" data-toggle="modal">
+                        <div class="thumb" style="background-image: url(img/projects/drone.png);"></div>
+                        <article class="article">
+                            <h1>Gesture Control Drone</h1>
+                            <p>Implemented a gesture control drone using Kinect and ROS.</p>
+                            <span>Spider R&D, 2018</span>
+                        </article>
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    
+    <center><p> Website Template taken from <a href="https://dexter1691.github.io/" target="_blank" style="color: black">Harsh Agrawal</a></p></center>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <script src="js/timeline.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+
+    <script async src="https://ipmeta.io/plugin.js"></script>
+
+    <meta name="google-site-verification" content="of5d9ckLytWKCHg9c9NZ7oTGOIP9pyZIvhsY-E1l-kY" />
+<!--     <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=70&t=n&d=dVk3zPCkNtyjYCpBbLV5B93rU5HiUuuX7HfFYuPcCJg&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353"></script>  -->
+
+    
+</body>
+
+</html>

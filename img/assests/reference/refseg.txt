@@ -1,0 +1,7 @@
+@inproceedings{shah2024lqmformer,
+  title={LQMFormer: Language-aware Query Mask Transformer for Referring Image Segmentation},
+  author={Shah, Nisarg A and VS, Vibashan and Patel, Vishal M},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={12903--12913},
+  year={2024}
+}
