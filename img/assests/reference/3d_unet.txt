@@ -1,8 +1,0 @@
-@inproceedings{islam2020brain,
-  title={Brain tumor segmentation and survival prediction using 3D attention UNet},
-  author={Islam, Mobarakol and Vibashan, VS and Jose, V Jeya Maria and Wijethilake, Navodini and Utkarsh, Uppal and Ren, Hongliang},
-  booktitle={Brainlesion: Glioma, Multiple Sclerosis, Stroke and Traumatic Brain Injuries: 5th International Workshop, BrainLes 2019, Held in Conjunction with MICCAI 2019, Shenzhen, China, October 17, 2019, Revised Selected Papers, Part I 5},
-  pages={262--272},
-  year={2020},
-  organization={Springer}
-}

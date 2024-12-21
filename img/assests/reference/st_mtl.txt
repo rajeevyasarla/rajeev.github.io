@@ -1,9 +1,0 @@
-@article{islam2021st,
-  title={ST-MTL: Spatio-temporal multitask learning model to predict scanpath while tracking instruments in robotic surgery},
-  author={Islam, Mobarakol and Vibashan, VS and Lim, Chwee Ming and Ren, Hongliang},
-  journal={Medical Image Analysis},
-  volume={67},
-  pages={101837},
-  year={2021},
-  publisher={Elsevier}
-}

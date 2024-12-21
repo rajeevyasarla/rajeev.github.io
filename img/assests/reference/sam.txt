@@ -1,6 +1,0 @@
-@article{vs2024possam,
-  title={PosSAM: Panoptic Open-vocabulary Segment Anything},
-  author={VS, Vibashan and Borse, Shubhankar and Park, Hyojin and Das, Debasmit and Patel, Vishal and Hayat, Munawar and Porikli, Fatih},
-  journal={arXiv preprint arXiv:2403.09620},
-  year={2024}
-}
