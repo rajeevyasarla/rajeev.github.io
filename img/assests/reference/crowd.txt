@@ -1,0 +1,10 @@
+@article{sindagi2020jhu,
+  title={Jhu-crowd++: Large-scale crowd counting dataset and a benchmark method},
+  author={Sindagi, Vishwanath A and Yasarla, Rajeev and Patel, Vishal M},
+  journal={IEEE transactions on pattern analysis and machine intelligence},
+  volume={44},
+  number={5},
+  pages={2594--2609},
+  year={2020},
+  publisher={IEEE}
+}

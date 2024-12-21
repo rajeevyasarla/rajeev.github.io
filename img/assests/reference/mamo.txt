@@ -1,0 +1,7 @@
+@inproceedings{yasarla2023mamo,
+  title={Mamo: Leveraging memory and attention for monocular video depth estimation},
+  author={Yasarla, Rajeev and Cai, Hong and Jeong, Jisoo and Shi, Yunxiao and Garrepalli, Risheek and Porikli, Fatih},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={8754--8764},
+  year={2023}
+}

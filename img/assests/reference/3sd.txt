@@ -1,0 +1,8 @@
+@InProceedings{Yasarla_2024_WACV,
+    author    = {Yasarla, Rajeev and Weng, Renliang and Choi, Wongun and Patel, Vishal M. and Sadeghian, Amir},
+    title     = {3SD: Self-Supervised Saliency Detection With No Labels},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    month     = {January},
+    year      = {2024},
+    pages     = {313-322}
+}

@@ -1,0 +1,9 @@
+@article{yasarla2020deblurring,
+  title={Deblurring face images using uncertainty guided multi-stream semantic networks},
+  author={Yasarla, Rajeev and Perazzi, Federico and Patel, Vishal M},
+  journal={IEEE Transactions on Image Processing},
+  volume={29},
+  pages={6251--6263},
+  year={2020},
+  publisher={IEEE}
+}

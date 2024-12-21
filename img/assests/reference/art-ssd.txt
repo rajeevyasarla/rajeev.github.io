@@ -1,0 +1,8 @@
+@inproceedings{yasarla2022art,
+  title={Art-ss: An adaptive rejection technique for semi-supervised restoration for adverse weather-affected images},
+  author={Yasarla, Rajeev and Priebe, Carey E and Patel, Vishal M},
+  booktitle={European Conference on Computer Vision},
+  pages={699--718},
+  year={2022},
+  organization={Springer}
+}

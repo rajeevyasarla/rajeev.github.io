@@ -1,0 +1,7 @@
+@inproceedings{yasarla2019uncertainty,
+  title={Uncertainty guided multi-scale residual learning-using a cycle spinning cnn for single image de-raining},
+  author={Yasarla, Rajeev and Patel, Vishal M},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={8405--8414},
+  year={2019}
+}

@@ -1,0 +1,7 @@
+@inproceedings{yasarla2020syn2real,
+  title={Syn2real transfer learning for image deraining using gaussian processes},
+  author={Yasarla, Rajeev and Sindagi, Vishwanath A and Patel, Vishal M},
+  booktitle={Proceedings of the IEEE/CVF conference on computer vision and pattern recognition},
+  pages={2726--2736},
+  year={2020}
+}
