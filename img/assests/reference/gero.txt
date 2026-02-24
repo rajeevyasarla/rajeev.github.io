@@ -1,0 +1,6 @@
+@inproceedings{hegde2025distilling,
+  title={Generative Scenario Rollouts for End-to-End Autonomous Driving},
+  author={Yasarla, Rajeev and Hegde, Deepti and Han, Shizhong and Cheng, Hsin-Pai and Shi, Yunxiao and Sadeghigooghari, Meysam and Mahajan, Shweta and Bhattacharyya, Apratim and Liu, Litian and Garrepalli, Risheek and others},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  year={2026}
+}

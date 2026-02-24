@@ -1,0 +1,7 @@
+@inproceedings{hegde2025distilling,
+  title={Distilling multi-modal large language models for autonomous driving},
+  author={Hegde, Deepti and Yasarla, Rajeev and Cai, Hong and Han, Shizhong and Bhattacharyya, Apratim and Mahajan, Shweta and Liu, Litian and Garrepalli, Risheek and Patel, Vishal M and Porikli, Fatih},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={27575--27585},
+  year={2025}
+}
