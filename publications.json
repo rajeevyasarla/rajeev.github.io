@@ -9,7 +9,7 @@
     "image_alt": "GeRo method teaser",
     "links": {
       "pdf": "https://arxiv.org/pdf/2601.11475",
-      "bibtex": "./img/assests/reference/gero.txt"
+      "bibtex": "./img/assets/reference/gero.txt"
     }
   },
   {
@@ -22,7 +22,7 @@
     "image_alt": "DiMA network overview",
     "links": {
       "pdf": "https://openaccess.thecvf.com/content/CVPR2025/papers/Hegde_Distilling_Multi-modal_Large_Language_Models_for_Autonomous_Driving_CVPR_2025_paper.pdf",
-      "bibtex": "./img/assests/reference/dima.txt"
+      "bibtex": "./img/assets/reference/dima.txt"
     }
   },
   {
@@ -35,7 +35,7 @@
     "image_alt": "FutureDepth network",
     "links": {
       "pdf": "https://arxiv.org/pdf/2403.12953",
-      "bibtex": "./img/assests/reference/futuredepth.txt"
+      "bibtex": "./img/assets/reference/futuredepth.txt"
     }
   },
   {
@@ -49,7 +49,7 @@
     "links": {
       "pdf": "https://openaccess.thecvf.com/content/WACV2024/papers/Yasarla_3SD_Self-Supervised_Saliency_Detection_With_No_Labels_WACV_2024_paper.pdf",
       "code": "https://github.com/rajeevyasarla/3SD",
-      "bibtex": "./img/assests/reference/3sd.txt"
+      "bibtex": "./img/assets/reference/3sd.txt"
     }
   },
   {
@@ -62,7 +62,7 @@
     "image_alt": "MAMo architecture",
     "links": {
       "pdf": "https://openaccess.thecvf.com/content/ICCV2023/papers/Yasarla_MAMo_Leveraging_Memory_and_Attention_for_Monocular_Video_Depth_Estimation_ICCV_2023_paper.pdf",
-      "bibtex": "./img/assests/reference/mamo.txt"
+      "bibtex": "./img/assets/reference/mamo.txt"
     }
   },
   {
@@ -76,7 +76,7 @@
     "links": {
       "pdf": "https://arxiv.org/pdf/2203.09275",
       "code": "https://github.com/rajeevyasarla/ART-SS",
-      "bibtex": "./img/assests/reference/art-ssd.txt"
+      "bibtex": "./img/assets/reference/art-ssd.txt"
     }
   },
   {
@@ -90,7 +90,7 @@
     "links": {
       "pdf": "https://openaccess.thecvf.com/content/CVPR2022/papers/Valanarasu_TransWeather_Transformer-Based_Restoration_of_Images_Degraded_by_Adverse_Weather_Conditions_CVPR_2022_paper.pdf",
       "code": "https://github.com/jeya-maria-jose/TransWeather",
-      "bibtex": "./img/assests/reference/transweather.txt"
+      "bibtex": "./img/assets/reference/transweather.txt"
     }
   },
   {
@@ -106,7 +106,7 @@
       "pdf": "https://arxiv.org/pdf/2207.03447",
       "code": "https://github.com/rajeevyasarla/AT-Net",
       "award": "https://drive.google.com/file/d/1zoOuZje_nbZkNJJqXMupqSXz67-ipBzL/view?usp=sharing",
-      "bibtex": "./img/assests/reference/at-net.txt"
+      "bibtex": "./img/assets/reference/at-net.txt"
     }
   },
   {
@@ -121,7 +121,7 @@
     "links": {
       "pdf": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Yasarla_Syn2Real_Transfer_Learning_for_Image_Deraining_Using_Gaussian_Processes_CVPR_2020_paper.pdf",
       "code": "https://github.com/rajeevyasarla/Syn2Real",
-      "bibtex": "./img/assests/reference/syn2real.txt"
+      "bibtex": "./img/assets/reference/syn2real.txt"
     }
   },
   {
@@ -135,7 +135,7 @@
     "links": {
       "pdf": "https://ieeexplore.ieee.org/abstract/document/9082831",
       "code": "https://github.com/rajeevyasarla/UMSN-Face-Deblurring",
-      "bibtex": "./img/assests/reference/deblur.txt"
+      "bibtex": "./img/assets/reference/deblur.txt"
     }
   },
   {
@@ -148,7 +148,7 @@
     "image_alt": "JHU-CROWD++ dataset graphic",
     "links": {
       "pdf": "https://ieeexplore.ieee.org/abstract/document/9248596",
-      "bibtex": "./img/assests/reference/crowd.txt"
+      "bibtex": "./img/assets/reference/crowd.txt"
     }
   },
   {
@@ -162,7 +162,7 @@
     "links": {
       "pdf": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Yasarla_Uncertainty_Guided_Multi-Scale_Residual_Learning-Using_a_Cycle_Spinning_CNN_for_CVPR_2019_paper.pdf",
       "code": "https://github.com/rajeevyasarla/UMRL--using-Cycle-Spinning",
-      "bibtex": "./img/assests/reference/urml.txt"
+      "bibtex": "./img/assets/reference/urml.txt"
     }
   }
 ]
