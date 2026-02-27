@@ -1,578 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rajeev Yasarla — Senior ML Researcher (Computer Vision, Robotics)</title>
+  <meta name="description" content="Senior ML Researcher at Qualcomm AI Research. Research in Computer Vision, Vision-Language-Action for Robotics, end-to-end autonomous driving, video depth estimation, image restoration, segmentation, and domain adaptation. ICIP 2021 Best Paper.">
+  <link rel="canonical" href="https://rajeevyasarla.github.io/rajeev.github.io/">
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="./img/logos/jhu_web.png" />
+  <!-- Favicon -->
+  <link rel="icon" href="./img/logos/jhu_web.png">
 
-    <title>Rajeev Yasarla: Personal Website</title>
+  <!-- Preconnects for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons/css/academicons.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/timeline.css" rel="stylesheet">
-    <link href="css/freelancer.css" rel="stylesheet">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet"
-        type="text/css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap" rel="stylesheet">
-    <script src="js/modernizr.js"></script>
-    <meta name="google-site-verification" content="of5d9ckLytWKCHg9c9NZ7oTGOIP9pyZIvhsY-E1l-kY" />
-    
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Custom CSS (keep if you rely on them; consider updating as needed) -->
+  <link href="css/timeline.css" rel="stylesheet">
+  <link href="css/freelancer.css" rel="stylesheet">
 
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rajeev Yasarla — Senior ML Researcher">
+  <meta property="og:description" content="CV/Research: VLA for Robotics, Autonomous Driving, Video Depth, Restoration.">
+  <meta property="og:url" content="https://rajeevyasarla.github.io/rajeev.github.io/">
+  <meta property="og:image" content="https://rajeevyasarla.github.io/rajeev.github.io/img/rajeev-2.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rajeev Yasarla — Senior ML Researcher">
+  <meta name="twitter:description" content="ICIP 2021 Best Paper; CVPR/ECCV/ICCV/WACV publications.">
+  <meta name="twitter:image" content="https://rajeevyasarla.github.io/rajeev.github.io/img/rajeev-2.jpg">
+
+  <!-- Google Site Verification (single instance) -->
+  <meta name="google-site-verification" content="of5d9ckLytWKCHg9c9NZ7oTGOIP9pyZIvhsY-E1l-kY" />
+
+  <style>
+    body { font-family: 'Open Sans', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
+    header.hero { padding: 6rem 0 3rem; background: #0d6efd; color: #fff; }
+    header.hero .name { font-weight: 800; letter-spacing: .3px; }
+    .social-icons .btn { margin-right: .5rem; }
+    .news-date { font-weight: 600; color: #6c757d; }
+    .pubt { font-size: 1.05rem; }
+    .publ ul { padding-left: 1rem; margin-bottom: 0; }
+    .publ li { display: inline; margin-right: 1rem; }
+    .section-pad { padding-top: 4rem; padding-bottom: 4rem; }
+    .light { border-top: 2px solid rgba(0,0,0,.1); width: 80px; margin: 1rem auto 2rem; }
+    .navbar-brand strong { font-weight: 700; }
+    .project-thumb { background-size: cover; background-position: center; width: 100%; height: 220px; border-radius: .5rem; }
+  </style>
 </head>
+<body>
 
-<body id="page-top" class="index">
+  <!-- Navbar (Bootstrap 5) -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top"><strong>Rajeev Yasarla</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="./files/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-about-me-hidden navbar-brand" href="#page-top">Rajeev Yasarla</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#teaching">Teaching</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#about">Publications</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="./files/CV.pdf" target="_blank">CV</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-
+  <!-- Header / Hero -->
+  <header id="page-top" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-md-4 text-center text-md-start">
+          <img src="img/rajeev-2.jpg" class="img-fluid rounded-circle" alt="Portrait of Rajeev Yasarla" width="320" height="320">
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+        <div class="col-12 col-md-8">
+          <h1 class="name h2 mb-3">Rajeev Yasarla</h1>
+          <div class="about_me">
+            <p class="mb-3" style="text-align: justify;">
+              I am a Senior Machine Learning Researcher at
+              <a class="link-light" href="https://www.qualcomm.com/research/artificial-intelligence/ai-research" target="_blank" rel="noopener noreferrer"><strong>Qualcomm AI Research</strong></a>,
+              with a Ph.D. in Electrical Engineering from Johns Hopkins University (advised by Vishal M. Patel).
+              My research spans Computer Vision, Machine Learning, 3D Vision, and Robotics. I have worked on
+              Vision-Language-Action (VLA) models for Robotics and end-to-end autonomous driving, video depth estimation,
+              image restoration/enhancement, image segmentation, and domain adaptation. I received the
+              <span class="badge text-bg-success">Best Paper Award — IEEE ICIP 2021</span>.
+            </p>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="row">
+            <p class="mb-2" style="text-align: justify;">I had the opportunity to intern at:</p>
+            <ol class="mb-3">
+              <li>
+                <a class="link-light" href="https://www.linkedin.com/company/aibee/" target="_blank" rel="noopener noreferrer"><strong>AIBEE US Corp.</strong></a>
+                (<a class="link-light" href="https://www.linkedin.com/in/amirabs/" target="_blank" rel="noopener noreferrer">Amir Sadeghian</a>) — self-supervised salient object detection.
+              </li>
+              <li>
+                <a class="link-light" href="https://www.microsoft.com/applied-sciences" target="_blank" rel="noopener noreferrer"><strong>Microsoft</strong></a>
+                (<a class="link-light" href="https://scholar.google.com/citations?user=w7fqrYYAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Hamid Reza Vaezi Joze</a>) — Face enhancement under noise/blur/low-light; 
+                project patented: <a class="link-light" href="https://patents.google.com/patent/US11526972B2/en" target="_blank" rel="noopener noreferrer"><strong>US Patent 11,526,972</strong></a>.
+              </li>
+            </ol>
+          </div>
 
-                <div class="col-xs-4">
-                    <img class="img-responsive img-circle" src="img/rajeev-2.jpg" alt="">
-                </div>
-                <div class="col-xs-8">
-                    <div class="intro-text">
-                        <span class="name">Rajeev Yasarla</span>
-                        <br>
-
-                        <span class="about_me">
-                            <p style="text-align: justify;">
-                                I am a Senior Machine Learning Researcher at <a href="https://www.qualcomm.com/research/artificial-intelligence/ai-research" target="_blank"><strong>Qualcomm AI Research</strong></a>, 
-                                with a Ph.D. in Electrical Engineering from the Department of 
-                                Electrical and Computer Engineering at Johns Hopkins University, 
-                                advised by Vishal M. Patel. My research has been recognized at top venues, 
-                                including receiving the <span style="color: #04ee5a">Best Paper Award at IEEE ICIP 2021</span>. 
-                                My broad research interests span Computer Vision, Machine Learning, 3D Vision,
-                                and Robotics. I have worked on a diverse set of topics, including 
-                                Vision-Language-Action (VLA) models for Robotics and end-to-end autonomous driving, 
-                                video depth estimation, low-level image restoration and enhancement, image segmentation, 
-                                and domain adaptation.
-                            </p>
-                        
-                            <p style="text-align: justify;">
-                                I had the opportunity to intern at:
-                                <ol>
-                                    <li><a href="https://www.linkedin.com/company/aibee/" target="_blank"><strong>AIBEE US Corp.</strong></a> 
-                                        (<a href="https://www.linkedin.com/in/amirabs/" target="_blank">Amir Sadeghian</a>) 
-                                        - Research on self-supervised salient object detection.
-                                    </li>
-                                    <li><a href="https://www.microsoft.com/applied-sciences" target="_blank"><strong>Microsoft</strong></a> 
-                                        (<a href="https://scholar.google.com/citations?user=w7fqrYYAAAAJ&hl=en" target="_blank">Hamid Reza Vaezi Joze</a>) 
-                                        - Face Enhancement of images with noise, blur, and low-light conditions project
-                                        - This project was patented, <a href="https://patents.google.com/patent/US11526972B2/en" target="_blank"><strong>US Patent 11,526,972</strong></a>
-                                    </li>
-                                </ol>
-                            </p>
-                        
-                            <!-- <p style="text-align: justify;">
-                                Before joining Hopkins, during my undergraduate I interned at <a href="https://www.mbrdi.co.in/" target="_blank"><strong>Mercedes-Benz Research & Development India (MBRDI)</strong></a> and <a href="https://www.nus.edu.sg/" target="_blank"><strong>National University of Singapore</strong></a>.
-                            </p> -->
-                        
-                            
-                        </span>
-                        
-                        <hr>
-                        <span class="skills">
-                            <ul class="list-inline">
-                                <li>
-                                    <a href="https://scholar.google.com/citations?hl=en&user=R8dwrxEAAAAJ&view_op=list_works"
-                                        class="btn-social btn-outline" target="_blank"><i class="ai ai-google-scholar"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/rajeev-yasarla-7275205b/" class="btn-social btn-outline" target="_blank"><i
-                                            class="fa fa-fw fa-linkedin"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.semanticscholar.org/author/R.-Yasarla/20622859" class="btn-social btn-outline" target="_blank"><i class="ai ai-semantic-scholar"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/rajeevyasarla" class="btn-social btn-outline" target="_blank"><i
-                                            class="fa fa-fw fa-github"></i></a>
-                                </li>
-                                <!-- <li>
-                                    <a href="https://x.com/vibashan" class="btn-social btn-outline" target="_blank"><i
-                                            class="fa fa-fw fa-twitter"></i></a>
-                                </li> -->
-                            </ul>
-                        </span>
-                        
-                    </div>
-                </div>
-            </div>
+          <div class="social-icons">
+            <a href="https://scholar.google.com/citations?hl=en&user=R8dwrxEAAAAJ&view_op=list_works" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+            <a href="https://www.linkedin.com/in/rajeev-yasarla-7275205b/" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a>
+            <a href="https://www.semanticscholar.org/author/R.-Yasarla/20622859" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer" aria-label="Semantic Scholar"><i class="ai ai-semantic-scholar"></i></a>
+            <a href="https://github.com/rajeevyasarla" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-fw fa-github"></i></a>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </header>
 
-    
-    <section id="news-list">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>News</h2>
-                    <hr class="light">
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Feb 2026</div>
-                    <div class="col-xs-8"><b>One paper accepted at <span style="color: #E73916">CVPR 2026</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Dec 2025</div>
-                    <div class="col-xs-8"><b>Demo presented at <span style="color: #E73916">NeurIPS 2025 and CES 2026</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Feb 2025</div>
-                    <div class="col-xs-8"><b>One paper accepted at <span style="color: #E73916">CVPR 2025</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Oct 2024</div>
-                    <div class="col-xs-8"><b>One paper accepted at <span style="color: #E73916">WACV 2025</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Jul 2024</div>
-                    <div class="col-xs-8"><b>One paper accepted at <span style="color: #E73916">ECCV 2024</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Jan 2024</div>
-                    <div class="col-xs-8"><b>Two papers accepted at <span style="color: #E73916">WACV 2024</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">July 2023</div>
-                    <div class="col-xs-8"><b>One paper accepted at <span style="color: #E73916">ICCV 2023</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">July 2022</div>
-                    <div class="col-xs-8"><b>One paper accepted at <span style="color: #E73916">ECCV 2022</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">May 2022</div>
-                    <div class="col-xs-8"><b>One paper was accepted for oral presentation at <span style="color: #E73916">EUSIPCO 2022</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">April 2022</div>
-                    <div class="col-xs-8"><b>One journal paper was published in  <span style="color: #E73916">IEEE TBIOM 2022</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Mar 2022</div>
-                    <div class="col-xs-8"><b>Defended <span style="color: #E73916">my Ph.D.</span></b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Mar 2022</div>
-                    <div class="col-xs-8"><b>One paper accepted for oral presentation at <span style="color: #E73916">ICPR 2022</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Mar 2022</div>
-                    <div class="col-xs-8"><b>One paper accepted at <span style="color: #E73916">CVPR 2022</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Sep 2021</div>
-                    <div class="col-xs-8"><b>Awarded  <span style="color: #04ee5a">Best Paper Award</span> <span style="color: #E73916">IEEE ICIP 2021</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">July 2021</div>
-                    <div class="col-xs-8"><b>One journal paper was published in <span style="color: #E73916">IEEE TIP 2021</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">July 2020</div>
-                    <div class="col-xs-8"><b>Two papers accepted at <span style="color: #E73916">ECCV 2020</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">April 2020</div>
-                    <div class="col-xs-8"><b>One journal paper was published in <span style="color: #E73916">IEEE TIP 2020</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Feb 2020</div>
-                    <div class="col-xs-8"><b>One paper accepted for oral presentation at <span style="color: #E73916">CVPR 2020</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Feb 2020</div>
-                    <div class="col-xs-8"><b>One journal paper was published in <span style="color: #E73916">IEEE TIP 2020</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Oct 2019</div>
-                    <div class="col-xs-8"><b>Awarded student travel grant  from <span style="color: #E73916"> ICCV PCO</span> for attending <span style="color: #E73916"> ICCV 2019</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">July 2019</div>
-                    <div class="col-xs-8"><b>One paper accepted at <span style="color: #E73916">ICCV 2019</span>.</b></div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-4 news-date">Feb 2019</div>
-                    <div class="col-xs-8"><b>One paper accepted at <span style="color: #E73916">CVPR 2019</span>.</b></div>
-                </div>
-            </div>
+  <!-- News -->
+  <section id="news-list" class="section-pad">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>News</h2>
+          <hr class="light">
         </div>
-    </section>
+      </div>
+      <ul class="list-unstyled">
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Feb 2026</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">CVPR 2026</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Dec 2025</div><div class="col-8 col-md-9"><strong>Demo presented at <span style="color:#E73916">NeurIPS 2025</span> and <span style="color:#E73916">CES 2026</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Feb 2025</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">CVPR 2025</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Oct 2024</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">WACV 2025</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Jul 2024</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">ECCV 2024</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Jan 2024</div><div class="col-8 col-md-9"><strong>Two papers accepted at <span style="color:#E73916">WACV 2024</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Jul 2023</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">ICCV 2023</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Jul 2022</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">ECCV 2022</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">May 2022</div><div class="col-8 col-md-9"><strong>One paper accepted for oral presentation at <span style="color:#E73916">EUSIPCO 2022</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Apr 2022</div><div class="col-8 col-md-9"><strong>One journal paper published in <span style="color:#E73916">IEEE TBIOM 2022</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Mar 2022</div><div class="col-8 col-md-9"><strong>Defended <span style="color:#E73916">my Ph.D.</span></strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Mar 2022</div><div class="col-8 col-md-9"><strong>One paper accepted for oral presentation at <span style="color:#E73916">ICPR 2022</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Mar 2022</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">CVPR 2022</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Sep 2021</div><div class="col-8 col-md-9"><strong>Awarded <span style="color:#04ee5a">Best Paper Award</span> at <span style="color:#E73916">IEEE ICIP 2021</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Jul 2021</div><div class="col-8 col-md-9"><strong>One journal paper published in <span style="color:#E73916">IEEE TIP 2021</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Jul 2020</div><div class="col-8 col-md-9"><strong>Two papers accepted at <span style="color:#E73916">ECCV 2020</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Apr 2020</div><div class="col-8 col-md-9"><strong>One journal paper published in <span style="color:#E73916">IEEE TIP 2020</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Feb 2020</div><div class="col-8 col-md-9"><strong>One paper accepted for oral presentation at <span style="color:#E73916">CVPR 2020</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Feb 2020</div><div class="col-8 col-md-9"><strong>One journal paper published in <span style="color:#E73916">IEEE TIP 2020</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Oct 2019</div><div class="col-8 col-md-9"><strong>Awarded student travel grant from <span style="color:#E73916">ICCV PCO</span> for <span style="color:#E73916">ICCV 2019</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Jul 2019</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">ICCV 2019</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Feb 2019</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">CVPR 2019</span>.</strong></div></li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- Teaching Section -->
-    <section id="teaching">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Teaching</h2>
-                    <hr class="light">
-                </div>
-            </div>
-            <div class="row">
-                <!-- <div class="col-xs-4 news-date">Fall 2021</div> -->
-                <li><b>Teaching Assistant: Introduction to Digital Signal Processing <a href="https://e-catalogue.jhu.edu/course-descriptions/electrical___computer_engineering/" target="_blank" style="color:blue;"><b>EN.520.344</b></a>, Fall 2021, ECE Dept., WSE, Johns Hopkins University.</b></li>
-            
-                <!-- <div class="col-xs-4 news-date">Fall 2020</div> -->
-                <li><b>Teaching Assistant: Introduction to Digital Signal Processing <a href="https://e-catalogue.jhu.edu/course-descriptions/electrical___computer_engineering/" target="_blank" style="color:blue;"><b>EN.520.344</b></a>, Fall 2020, ECE Dept., WSE, Johns Hopkins University.</b></li>
-            
-                <!-- <div class="col-xs-4 news-date">Fall 2019</div> -->
-                <li><b>Teaching Assistant: Introduction to Digital Signal Processing <a href="https://e-catalogue.jhu.edu/course-descriptions/electrical___computer_engineering/" target="_blank" style="color:blue;"><b>EN.520.344</b></a>, Fall 2019, ECE Dept., WSE, Johns Hopkins University.</b></li>
-            
-                <!-- <div class="col-xs-4 news-date">Spring 2016</div> -->
-                <li><b>Teaching Assistant: Introduction to Data Structures and Algorithms <a href="https://www.ee.iitm.ac.in/courses/syllabus/EE4371" target="_blank" style="color:blue;"><b>EE4371</b></a>, Spring 2016, Dept. of Electrical Eng., IIT Madras.</b></li>
-            
-                <!-- <div class="col-xs-4 news-date">Fall 2015</div> -->
-                <li><b>Teaching Assistant: Basic Electrical Engineering  <a href="https://www.ee.iitm.ac.in/courses/syllabus/EE1100" target="_blank" style="color:blue;"><b>EE1100</b></a>, Fall 2015, Dept. of Electrical Eng., IIT Madras.</b></li>
-            </div>
+  <!-- Teaching -->
+  <section id="teaching" class="section-pad bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Teaching</h2>
+          <hr class="light">
         </div>
-    </section>
+      </div>
+      <ul>
+        <li><strong>Teaching Assistant:</strong> Introduction to Digital Signal Processing <a href="https://e-catalogue.jhu.edu/course-descriptions/electrical___computer_engineering/" target="_blank" rel="noopener noreferrer" style="color:blue;"><strong>EN.520.344</strong></a>, Fall 2021, ECE Dept., WSE, Johns Hopkins University.</li>
+        <li><strong>Teaching Assistant:</strong> Introduction to Digital Signal Processing <a href="https://e-catalogue.jhu.edu/course-descriptions/electrical___computer_engineering/" target="_blank" rel="noopener noreferrer" style="color:blue;"><strong>EN.520.344</strong></a>, Fall 2020, ECE Dept., WSE, Johns Hopkins University.</li>
+        <li><strong>Teaching Assistant:</strong> Introduction to Digital Signal Processing <a href="https://e-catalogue.jhu.edu/course-descriptions/electrical___computer_engineering/" target="_blank" rel="noopener noreferrer" style="color:blue;"><strong>EN.520.344</strong></a>, Fall 2019, ECE Dept., WSE, Johns Hopkins University.</li>
+        <li><strong>Teaching Assistant:</strong> Introduction to Data Structures and Algorithms <a href="https://www.ee.iitm.ac.in/courses/syllabus/EE4371" target="_blank" rel="noopener noreferrer" style="color:blue;"><strong>EE4371</strong></a>, Spring 2016, Dept. of Electrical Eng., IIT Madras.</li>
+        <li><strong>Teaching Assistant:</strong> Basic Electrical Engineering <a href="https://www.ee.iitm.ac.in/courses/syllabus/EE1100" target="_blank" rel="noopener noreferrer" style="color:blue;"><strong>EE1100</strong></a>, Fall 2015, Dept. of Electrical Eng., IIT Madras.</li>
+      </ul>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Selected Publications</h2>
-                    <hr class="light">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="img/assests/GeRo/gero.png" style="width: 300px; height: 140px;" alt="">
-                </div>
-                <div class="col-sm-8 col-xs-12">
-                    <div class="pubt"><strong>Generative Scenario Rollouts for End-to-End Autonomous Driving</strong></div>
-                    <div class="puba"> <b>Rajeev Yasarla</b>, Deepti Hegde, Shizhong Han, Hsin-Pai Cheng, Yunxiao Shi, Meysam Sadeghigooghari, Shweta Mahajan, Apratim Bhattacharyya, Litian Liu, Risheek Garrepalli, Thomas Svantesson, Fatih Porikli, Hong Cai</div>
-                    <div class="pubv"><b>CVPR 2026</b></div>
-                    <div class="publ">
-                        <ul>
-                            <li><a href="https://arxiv.org/pdf/2601.11475" target="_blank" style="color:blue;"><b>PDF</b></a></li>
-                            <!-- <li><a href="https://github.com/Vibashan/3D_Attention_UNet" target="_blank" style="color:red;"><b>Code</b></a></li> -->
-                            <li><a href="./img/assests/reference/gero.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="img/assests/DiMA/network.png" style="width: 300px; height: 140px;" alt="">
-                </div>
-                <div class="col-sm-8 col-xs-12">
-                    <div class="pubt"><strong>Distilling Multi-modal Large Language Models for Autonomous Driving</strong></div>
-                    <div class="puba"> Deepti Hegde*, <b>Rajeev Yasarla</b>*, Hong Cai, Shizhong Han, Apratim Bhattacharyya, Shweta Mahajan, Litian Liu, Risheek Garrepalli, Vishal M. Patel, Fatih Porikli. "*" means equal contribution</div>
-                    <div class="pubv"><b>CVPR 2025</b></div>
-                    <div class="publ">
-                        <ul>
-                            <li><a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Hegde_Distilling_Multi-modal_Large_Language_Models_for_Autonomous_Driving_CVPR_2025_paper.pdf" target="_blank" style="color:blue;"><b>PDF</b></a></li>
-                            <!-- <li><a href="https://github.com/Vibashan/3D_Attention_UNet" target="_blank" style="color:red;"><b>Code</b></a></li> -->
-                            <li><a href="./img/assests/reference/dima.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="img/assests/futuredepth/network.png" style="width: 300px; height: 140px;" alt="">
-                </div>
-                <div class="col-sm-8 col-xs-12">
-                    <div class="pubt"><strong>FutureDepth: Learning to Predict the Future Improves Video Depth Estimation</strong></div>
-                    <div class="puba"> <b>Rajeev Yasarla</b>, Manish Kumar Singh, Hong Cai, Yunxiao Shi, Jisoo Jeong, Yinhao Zhu, Shizhong Han, Risheek Garrepalli, Fatih Porikli</div>
-                    <div class="pubv"><b>ECCV 2024</b></div>
-                    <div class="publ">
-                        <ul>
-                            <li><a href="https://arxiv.org/pdf/2403.12953" target="_blank" style="color:blue;"><b>PDF</b></a></li>
-                            <!-- <li><a href="https://github.com/Vibashan/3D_Attention_UNet" target="_blank" style="color:red;"><b>Code</b></a></li> -->
-                            <li><a href="./img/assests/reference/futuredepth.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="img/assests/3sd/Network_overview.png" style="width: 300px; height: 140px;" alt="">
-                </div>
-                <div class="col-sm-8 col-xs-12">
-                    <div class="pubt"><strong>3SD: Self-supervised saliency detection with no labels</strong></div>
-                    <div class="puba"> <b>Rajeev Yasarla</b>, Renliang Weng, Wongun Choi, Vishal M Patel, Amir Sadeghian</div>
-                    <div class="pubv"><b>IEEE WACV 2024</b> </div>
-                     <br> 
-                    <div class="publ">
-                        <ul>
-                            <li><a href="https://openaccess.thecvf.com/content/WACV2024/papers/Yasarla_3SD_Self-Supervised_Saliency_Detection_With_No_Labels_WACV_2024_paper.pdf" target="_blank" style="color:blue;"><b>PDF</b></a></li>
-                            <li><a href="https://github.com/rajeevyasarla/3SD" target="_blank" style="color:red;"><b>Code</b></a></li>
-                            <li><a href="./img/assests/reference/3sd.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="img/assests/mamo/network.png" style="width: 300px; height: 140px;" alt="">
-                </div>
-                <div class="col-sm-8 col-xs-12">
-                    <div class="pubt"><strong>Mamo: Leveraging memory and attention for monocular video depth estimation</strong></div>
-                    <div class="puba"> <b>Rajeev Yasarla</b>, Hong Cai, Jisoo Jeong, Yunxiao Shi, Risheek Garrepalli, Fatih Porikli</div>
-                    <div class="pubv"><b>ICCV 2023</b> </div>
-                    <div class="publ">
-                        <ul>
-                            <li><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Yasarla_MAMo_Leveraging_Memory_and_Attention_for_Monocular_Video_Depth_Estimation_ICCV_2023_paper.pdf" target="_blank" style="color:blue;"><b>PDF</b></a></li>
-                            <!-- <li><a href="https://github.com/rajeevyasarla/3SD" target="_blank" style="color:red;"><b>Code</b></a></li> -->
-                            <li><a href="./img/assests/reference/mamo.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="img/assests/art-ssd/Method.png" style="width: 300px; height: 140px;" alt="">
-                </div>
-                <div class="col-sm-8 col-xs-12">
-                    <div class="pubt"><strong>Art-ss: An adaptive rejection technique for semi-supervised restoration for adverse weather-affected images</strong></div>
-                    <div class="puba"> <b>Rajeev Yasarla</b>, Carey E Priebe, Vishal M Patel</div>
-                    <div class="pubv"><b>ECCV 2022</b> </div>
-                    <div class="publ">
-                        <ul>
-                            <li><a href="https://arxiv.org/pdf/2203.09275" target="_blank" style="color:blue;"><b>PDF</b></a></li>
-                            <li><a href="https://github.com/rajeevyasarla/ART-SS" target="_blank" style="color:red;"><b>Code</b></a></li>
-                            <li><a href="./img/assests/reference/art-ssd.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="img/assests/transweather/network.png" style="width: 300px; height: 140px;" alt="">
-                </div>
-                <div class="col-sm-8 col-xs-12">
-                    <div class="pubt"><strong>Transweather: Transformer-based restoration of images degraded by adverse weather conditions</strong></div>
-                    <div class="puba"> Jeya Maria Jose Valanarasu, <b>Rajeev Yasarla</b>, Vishal M Patel</div>
-                    <div class="pubv"><b>CVPR 2022</b> </div>
-                    <div class="publ">
-                        <ul>
-                            <li><a href="https://openaccess.thecvf.com/content/CVPR2022/papers/Valanarasu_TransWeather_Transformer-Based_Restoration_of_Images_Degraded_by_Adverse_Weather_Conditions_CVPR_2022_paper.pdf" target="_blank" style="color:blue;"><b>PDF</b></a></li>
-                            <li><a href="https://github.com/jeya-maria-jose/TransWeather" target="_blank" style="color:red;"><b>Code</b></a></li>
-                            <li><a href="./img/assests/reference/transweather.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="img/assests/at-net/turbulence_icasp2021_1.png" style="width: 300px; height: 140px;" alt="">
-                </div>
-                <div class="col-sm-8 col-xs-12">
-                    <div class="pubt"><strong>Learning to restore images degraded by atmospheric turbulence using uncertainty</strong></div>
-                    <div class="puba"> <b>Rajeev Yasarla</b>, Vishal M Patel</div>
-                    <div class="pubv"><b>Best Paper Award</b> </div>
-                    <div class="pubv"><b>IEEE ICIP 2021</b> </div>
-                    <div class="publ">
-                        <ul>
-                            <li><a href="https://arxiv.org/pdf/2207.03447" target="_blank" style="color:blue;"><b>PDF</b></a></li>
-                            <li><a href="https://github.com/rajeevyasarla/AT-Net" target="_blank" style="color:red;"><b>Code</b></a></li>
-                            <li><a href="https://drive.google.com/file/d/1zoOuZje_nbZkNJJqXMupqSXz67-ipBzL/view?usp=sharing" target="_blank" style="color:rgb(0, 255, 64);"><b>Best Paper Award</b></a></li>
-                            <li><a href="./img/assests/reference/at-net.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="img/assests/syn2real/Overview_GP.png" style="width: 300px; height: 140px;" alt="">
-                </div>
-                <div class="col-sm-8 col-xs-12">
-                    <div class="pubt"><strong>Syn2Real Transfer Learning for Image Deraining using Gaussian Processes</strong></div>
-                    <div class="puba">  <b>Rajeev Yasarla</b>, Vishwanath A. Sindagi, Vishal M Patel</div>
-                    <div class="pubv"><b>Oral presentation</b> </div>
-                    <div class="pubv"><b>CVPR 2020</b> </div>
-                    <div class="publ">
-                        <ul>
-                            <li><a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Yasarla_Syn2Real_Transfer_Learning_for_Image_Deraining_Using_Gaussian_Processes_CVPR_2020_paper.pdf" target="_blank" style="color:blue;"><b>PDF</b></a></li>
-                            <li><a href="https://github.com/rajeevyasarla/Syn2Real" target="_blank" style="color:red;"><b>Code</b></a></li>
-                            <li><a href="./img/assests/reference/syn2real.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="img/assests/deblur/Face_Deblur2.png" style="width: 300px;" alt="">
-                </div>
-                <div class="col-sm-8 col-xs-12">
-                    <div class="pubt"><strong>Deblurring face images using uncertainty guided multi-stream semantic networks</strong></div>
-                    <div class="puba"> <b>Rajeev Yasarla</b>, Federico Perazzi, Vishal M Patel</div>
-                    <div class="pubv"><b>IEEE TIP 2020</b> </div>
-                    <div class="publ">
-                        <ul>
-                            <li><a href="https://ieeexplore.ieee.org/abstract/document/9082831" target="_blank" style="color:blue;"><b>PDF</b></a></li>
-                            <li><a href="https://github.com/rajeevyasarla/UMSN-Face-Deblurring" target="_blank" style="color:red;"><b>Code</b></a></li>
-                            <li><a href="./img/assests/reference/deblur.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="img/assests/crowd/network.png" style="width: 300px; height: 140px;" alt="">
-                </div>
-                <div class="col-sm-8 col-xs-12">
-                    <div class="pubt"><strong>Jhu-crowd++: Large-scale crowd counting dataset and a benchmark method</strong></div>
-                    <div class="puba"> Vishwanath A. Sindagi, <b>Rajeev Yasarla</b>, Vishal M Patel</div>
-                    <div class="pubv"><b>IEEE TPAMI 2020</b> </div>
-                    <div class="publ">
-                        <ul>
-                            <li><a href="https://ieeexplore.ieee.org/abstract/document/9248596" target="_blank" style="color:blue;"><b>PDF</b></a></li>
-                            <!-- <li><a href="https://github.com/rajeevyasarla/UMSN-Face-Deblurring" target="_blank" style="color:red;"><b>Code</b></a></li> -->
-                            <li><a href="./img/assests/reference/crowd.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-4 col-xs-12">
-                    <img class="img-responsive" src="img/assests/umrl/network.png" style="width: 300px; height: 140px;" alt="">
-                </div>
-                <div class="col-sm-8 col-xs-12">
-                    <div class="pubt"><strong>Uncertainty Guided Multi-Scale Residual Learning-Using a Cycle Spinning CNN for Single Image De-Raining</strong></div>
-                    <div class="puba">  <b>Rajeev Yasarla</b>, Vishal M Patel</div>
-                    <div class="pubv"><b>CVPR 2019</b> </div>
-                    <div class="publ">
-                        <ul>
-                            <li><a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Yasarla_Uncertainty_Guided_Multi-Scale_Residual_Learning-Using_a_Cycle_Spinning_CNN_for_CVPR_2019_paper.pdf" target="_blank" style="color:blue;"><b>PDF</b></a></li>
-                            <li><a href="https://github.com/rajeevyasarla/UMRL--using-Cycle-Spinning" target="_blank" style="color:red;"><b>Code</b></a></li>
-                            <li><a href="./img/assests/reference/urml.txt" target="_blank" style="color:#B87333;"><b>bibtex</b></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <!-- Publications (Data-driven) -->
+  <section id="publications" class="section-pad">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Selected Publications</h2>
+          <hr class="light">
         </div>
-    </section>
+      </div>
+      <div id="pub-list" class="gy-4"></div>
+      <p class="text-muted mt-3"><small>* If marked, indicates equal contribution.</small></p>
+    </div>
+  </section>
 
-
-    
-
-    
-
-    <!-- Portfolio Grid Section -->
-    <section id="projects">
-        <div class="">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Projects</h2>
-                    <hr class="light">
-                </div>
-            </div>
-            <div class="band">
-                <!-- <div class="item-1">
-                    <a href="#EvalAI" class="card portfolio-link" data-toggle="modal">
-                        <div class="thumb"
-                            style="width: 400px; background-image: url(https://raw.githubusercontent.com/Cloud-CV/EvalAI/master/docs/source/_static/img/evalai_logo.png);">
-                        </div>
-                        <article class="article">
-                            <h1>EvalAI</h1>
-                            <p>An open source platform to create, collaborate and participate in the AI Challenges. By
-                                simplifying and standardizing the process of
-                                benchmarking AI, we want to circumvent many of the factors impeding the rate of progress
-                                in AI.</p>
-                            <span>Georgia Tech</span>
-                        </article>
-                    </a>
-                </div> -->
-                <div class="item-2">
-                    <a href="https://eescholars.iitm.ac.in/sites/default/files/eethesis/ee11b080.pdf" class="card portfolio-link" data-toggle="modal">
-                        <div class="thumb" style="background-image: url(projects/dual-degree/fin-ppt.gif);"></div>
-                        <article class="article">
-                            <h1>Masters Project</h1>
-                            <p>Pedestrian detection and tracking for driver assistance</p>
-                            <span>IIT Madras, 2016</span>
-                            <p href="https://eescholars.iitm.ac.in/sites/default/files/eethesis/ee11b080.pdf" target="_blank" style="color:blue;"><b>PDF</b></p>
-                        </article>
-                    </a>
-                </div>
-                <!-- <div class="item-3">
-                    <a href="https://eescholars.iitm.ac.in/sites/default/files/eethesis/ee11b080.pdf" class="card portfolio-link" data-toggle="modal">
-                        <div class="thumb" style="background-image: url(projects/dual-degree/fin-ppt.gif);"></div>
-                        <article class="article">
-                            <h1>Masters Project</h1>
-                            <p>Pedestrian detection and tracking for driver assistance</p>
-                            <span>IIT Madras, 2016</span>
-                            <p href="https://eescholars.iitm.ac.in/sites/default/files/eethesis/ee11b080.pdf" target="_blank" style="color:blue;"><b>PDF</b></p>
-                        </article>
-                    </a>
-                </div> -->
-            </div>
+  <!-- Projects -->
+  <section id="projects" class="section-pad bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2>Projects</h2>
+          <hr class="light">
         </div>
-    </section>
+      </div>
 
-   
-    
-    <!-- <center><p> Website Template taken from <a href="https://dexter1691.github.io/" target="_blank" style="color: black">Harsh Agrawal</a></p></center> -->
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <a href="https://eescholars.iitm.ac.in/sites/default/files/eethesis/ee11b080.pdf" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
+            <div class="project-thumb" style="background-image:url('projects/dual-degree/fin-ppt.gif');" aria-label="Masters Project: Pedestrian detection and tracking for driver assistance"></div>
+            <article class="mt-2">
+              <h3 class="h5 mb-1">Masters Project</h3>
+              <p class="mb-1">Pedestrian detection and tracking for driver assistance</p>
+              <span class="text-muted">IIT Madras, 2016</span>
+            </article>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <footer class="py-4 border-top">
+    <div class="container small text-center text-muted">
+      © <span id="year"></span> Rajeev Yasarla
+    </div>
+  </footer>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+  <!-- Structured Data (Schema.org Person) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Rajeev Yasarla",
+    "jobTitle": "Senior Machine Learning Researcher",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Qualcomm AI Research",
+      "url": "https://www.qualcomm.com/research/artificial-intelligence/ai-research"
+    },
+    "alumniOf": [
+      {"@type": "CollegeOrUniversity", "name": "Johns Hopkins University", "url": "https://www.jhu.edu/"},
+      {"@type": "CollegeOrUniversity", "name": "IIT Madras", "url": "https://www.iitm.ac.in/"}
+    ],
+    "url": "https://rajeevyasarla.github.io/rajeev.github.io/",
+    "image": "https://rajeevyasarla.github.io/rajeev.github.io/img/rajeev-2.jpg",
+    "sameAs": [
+      "https://scholar.google.com/citations?user=R8dwrxEAAAAJ",
+      "https://www.linkedin.com/in/rajeev-yasarla-7275205b/",
+      "https://www.semanticscholar.org/author/R.-Yasarla/20622859",
+      "https://github.com/rajeevyasarla"
+    ]
+  }
+  </script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+  <!-- Bootstrap 5 Bundle JS (no jQuery needed) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+  <!-- Publications renderer -->
+  <script>
+    // Current year in footer
+    document.addEventListener('DOMContentLoaded', function() {
+      const y = document.getElementById('year'); if (y) y.textContent = new Date().getFullYear();
+    });
 
-    <script src="js/timeline.js"></script>
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
+    async function renderPublications() {
+      try {
+        const res = await fetch('publications.json', {cache: 'no-store'});
+        const pubs = await res.json();
+        const container = document.getElementById('pub-list');
+        if (!container) return;
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
+        pubs.forEach(pub => {
+          const row = document.createElement('div');
+          row.className = 'row align-items-start mb-4';
 
-    <script async src="https://ipmeta.io/plugin.js"></script>
+          const colImg = document.createElement('div');
+          colImg.className = 'col-sm-4 col-12 mb-2 mb-sm-0';
+          const img = document.createElement('img');
+          img.src = pub.image;
+          img.alt = pub.image_alt || ('Figure for ' + pub.title);
+          img.loading = 'lazy';
+          img.width = 300; img.height = 140;
+          img.className = 'img-fluid';
+          colImg.appendChild(img);
 
-    <meta name="google-site-verification" content="of5d9ckLytWKCHg9c9NZ7oTGOIP9pyZIvhsY-E1l-kY" />
-<!--     <script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=080808&w=70&t=n&d=dVk3zPCkNtyjYCpBbLV5B93rU5HiUuuX7HfFYuPcCJg&co=ffffff&ct=808080&cmo=3acc3a&cmn=ff5353"></script>  -->
+          const colTxt = document.createElement('div');
+          colTxt.className = 'col-sm-8 col-12';
+          const title = document.createElement('div');
+          title.className = 'pubt fw-semibold';
+          title.textContent = pub.title;
 
-    
+          const authors = document.createElement('div');
+          authors.className = 'puba';
+          authors.innerHTML = pub.authors_html || pub.authors;
+
+          const venue = document.createElement('div');
+          venue.className = 'pubv fw-semibold';
+          venue.textContent = `${pub.venue} ${pub.year}` + (pub.note ? ` — ${pub.note}` : '');
+
+          const links = document.createElement('div');
+          links.className = 'publ';
+          const ul = document.createElement('ul');
+
+          function addLink(name, url, color) {
+            if (!url) return;
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+            a.style.color = color || 'blue'; a.innerHTML = `<strong>${name}</strong>`;
+            li.appendChild(a); ul.appendChild(li);
+          }
+
+          addLink('PDF', pub.links?.pdf, 'blue');
+          addLink('Code', pub.links?.code, 'red');
+          addLink('bibtex', pub.links?.bibtex, '#B87333');
+          if (pub.links?.award) addLink('Best Paper Award', pub.links.award, 'rgb(0, 255, 64)');
+
+          links.appendChild(ul);
+
+          colTxt.appendChild(title);
+          colTxt.appendChild(authors);
+          colTxt.appendChild(venue);
+          colTxt.appendChild(links);
+
+          row.appendChild(colImg);
+          row.appendChild(colTxt);
+
+          container.appendChild(row);
+        });
+      } catch (e) {
+        console.error('Failed to render publications', e);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', renderPublications);
+  </script>
 </body>
-
 </html>

@@ -1,0 +1,168 @@
+[
+  {
+    "title": "Generative Scenario Rollouts for End-to-End Autonomous Driving",
+    "authors": "Rajeev Yasarla, Deepti Hegde, Shizhong Han, Hsin-Pai Cheng, Yunxiao Shi, Meysam Sadeghigooghari, Shweta Mahajan, Apratim Bhattacharyya, Litian Liu, Risheek Garrepalli, Thomas Svantesson, Fatih Porikli, Hong Cai",
+    "authors_html": "<strong>Rajeev Yasarla</strong>, Deepti Hegde, Shizhong Han, Hsin-Pai Cheng, Yunxiao Shi, Meysam Sadeghigooghari, Shweta Mahajan, Apratim Bhattacharyya, Litian Liu, Risheek Garrepalli, Thomas Svantesson, Fatih Porikli, Hong Cai",
+    "venue": "CVPR",
+    "year": 2026,
+    "image": "img/assests/GeRo/gero.png",
+    "image_alt": "GeRo method teaser",
+    "links": {
+      "pdf": "https://arxiv.org/pdf/2601.11475",
+      "bibtex": "./img/assests/reference/gero.txt"
+    }
+  },
+  {
+    "title": "Distilling Multi-modal Large Language Models for Autonomous Driving",
+    "authors": "Deepti Hegde*, Rajeev Yasarla*, Hong Cai, Shizhong Han, Apratim Bhattacharyya, Shweta Mahajan, Litian Liu, Risheek Garrepalli, Vishal M. Patel, Fatih Porikli",
+    "authors_html": "Deepti Hegde*, <strong>Rajeev Yasarla</strong>*, Hong Cai, Shizhong Han, Apratim Bhattacharyya, Shweta Mahajan, Litian Liu, Risheek Garrepalli, Vishal M. Patel, Fatih Porikli. \"*\" means equal contribution",
+    "venue": "CVPR",
+    "year": 2025,
+    "image": "img/assests/DiMA/network.png",
+    "image_alt": "DiMA network overview",
+    "links": {
+      "pdf": "https://openaccess.thecvf.com/content/CVPR2025/papers/Hegde_Distilling_Multi-modal_Large_Language_Models_for_Autonomous_Driving_CVPR_2025_paper.pdf",
+      "bibtex": "./img/assests/reference/dima.txt"
+    }
+  },
+  {
+    "title": "FutureDepth: Learning to Predict the Future Improves Video Depth Estimation",
+    "authors": "Rajeev Yasarla, Manish Kumar Singh, Hong Cai, Yunxiao Shi, Jisoo Jeong, Yinhao Zhu, Shizhong Han, Risheek Garrepalli, Fatih Porikli",
+    "authors_html": "<strong>Rajeev Yasarla</strong>, Manish Kumar Singh, Hong Cai, Yunxiao Shi, Jisoo Jeong, Yinhao Zhu, Shizhong Han, Risheek Garrepalli, Fatih Porikli",
+    "venue": "ECCV",
+    "year": 2024,
+    "image": "img/assests/futuredepth/network.png",
+    "image_alt": "FutureDepth network",
+    "links": {
+      "pdf": "https://arxiv.org/pdf/2403.12953",
+      "bibtex": "./img/assests/reference/futuredepth.txt"
+    }
+  },
+  {
+    "title": "3SD: Self-supervised saliency detection with no labels",
+    "authors": "Rajeev Yasarla, Renliang Weng, Wongun Choi, Vishal M Patel, Amir Sadeghian",
+    "authors_html": "<strong>Rajeev Yasarla</strong>, Renliang Weng, Wongun Choi, Vishal M Patel, Amir Sadeghian",
+    "venue": "IEEE WACV",
+    "year": 2024,
+    "image": "img/assests/3sd/Network_overview.png",
+    "image_alt": "3SD method overview",
+    "links": {
+      "pdf": "https://openaccess.thecvf.com/content/WACV2024/papers/Yasarla_3SD_Self-Supervised_Saliency_Detection_With_No_Labels_WACV_2024_paper.pdf",
+      "code": "https://github.com/rajeevyasarla/3SD",
+      "bibtex": "./img/assests/reference/3sd.txt"
+    }
+  },
+  {
+    "title": "MAMo: Leveraging memory and attention for monocular video depth estimation",
+    "authors": "Rajeev Yasarla, Hong Cai, Jisoo Jeong, Yunxiao Shi, Risheek Garrepalli, Fatih Porikli",
+    "authors_html": "<strong>Rajeev Yasarla</strong>, Hong Cai, Jisoo Jeong, Yunxiao Shi, Risheek Garrepalli, Fatih Porikli",
+    "venue": "ICCV",
+    "year": 2023,
+    "image": "img/assests/mamo/network.png",
+    "image_alt": "MAMo architecture",
+    "links": {
+      "pdf": "https://openaccess.thecvf.com/content/ICCV2023/papers/Yasarla_MAMo_Leveraging_Memory_and_Attention_for_Monocular_Video_Depth_Estimation_ICCV_2023_paper.pdf",
+      "bibtex": "./img/assests/reference/mamo.txt"
+    }
+  },
+  {
+    "title": "ART-SS: An adaptive rejection technique for semi-supervised restoration for adverse weather-affected images",
+    "authors": "Rajeev Yasarla, Carey E Priebe, Vishal M Patel",
+    "authors_html": "<strong>Rajeev Yasarla</strong>, Carey E Priebe, Vishal M Patel",
+    "venue": "ECCV",
+    "year": 2022,
+    "image": "img/assests/art-ssd/Method.png",
+    "image_alt": "ART-SS pipeline",
+    "links": {
+      "pdf": "https://arxiv.org/pdf/2203.09275",
+      "code": "https://github.com/rajeevyasarla/ART-SS",
+      "bibtex": "./img/assests/reference/art-ssd.txt"
+    }
+  },
+  {
+    "title": "TransWeather: Transformer-based restoration of images degraded by adverse weather conditions",
+    "authors": "Jeya Maria Jose Valanarasu, Rajeev Yasarla, Vishal M Patel",
+    "authors_html": "Jeya Maria Jose Valanarasu, <strong>Rajeev Yasarla</strong>, Vishal M Patel",
+    "venue": "CVPR",
+    "year": 2022,
+    "image": "img/assests/transweather/network.png",
+    "image_alt": "TransWeather architecture",
+    "links": {
+      "pdf": "https://openaccess.thecvf.com/content/CVPR2022/papers/Valanarasu_TransWeather_Transformer-Based_Restoration_of_Images_Degraded_by_Adverse_Weather_Conditions_CVPR_2022_paper.pdf",
+      "code": "https://github.com/jeya-maria-jose/TransWeather",
+      "bibtex": "./img/assests/reference/transweather.txt"
+    }
+  },
+  {
+    "title": "Learning to restore images degraded by atmospheric turbulence using uncertainty",
+    "authors": "Rajeev Yasarla, Vishal M Patel",
+    "authors_html": "<strong>Rajeev Yasarla</strong>, Vishal M Patel",
+    "venue": "IEEE ICIP",
+    "year": 2021,
+    "note": "Best Paper Award",
+    "image": "img/assests/at-net/turbulence_icasp2021_1.png",
+    "image_alt": "AT-Net example",
+    "links": {
+      "pdf": "https://arxiv.org/pdf/2207.03447",
+      "code": "https://github.com/rajeevyasarla/AT-Net",
+      "award": "https://drive.google.com/file/d/1zoOuZje_nbZkNJJqXMupqSXz67-ipBzL/view?usp=sharing",
+      "bibtex": "./img/assests/reference/at-net.txt"
+    }
+  },
+  {
+    "title": "Syn2Real Transfer Learning for Image Deraining using Gaussian Processes",
+    "authors": "Rajeev Yasarla, Vishwanath A. Sindagi, Vishal M Patel",
+    "authors_html": "<strong>Rajeev Yasarla</strong>, Vishwanath A. Sindagi, Vishal M Patel",
+    "venue": "CVPR",
+    "year": 2020,
+    "note": "Oral presentation",
+    "image": "img/assests/syn2real/Overview_GP.png",
+    "image_alt": "Syn2Real overview",
+    "links": {
+      "pdf": "https://openaccess.thecvf.com/content_CVPR_2020/papers/Yasarla_Syn2Real_Transfer_Learning_for_Image_Deraining_Using_Gaussian_Processes_CVPR_2020_paper.pdf",
+      "code": "https://github.com/rajeevyasarla/Syn2Real",
+      "bibtex": "./img/assests/reference/syn2real.txt"
+    }
+  },
+  {
+    "title": "Deblurring face images using uncertainty guided multi-stream semantic networks",
+    "authors": "Rajeev Yasarla, Federico Perazzi, Vishal M Patel",
+    "authors_html": "<strong>Rajeev Yasarla</strong>, Federico Perazzi, Vishal M Patel",
+    "venue": "IEEE TIP",
+    "year": 2020,
+    "image": "img/assests/deblur/Face_Deblur2.png",
+    "image_alt": "Face deblurring example",
+    "links": {
+      "pdf": "https://ieeexplore.ieee.org/abstract/document/9082831",
+      "code": "https://github.com/rajeevyasarla/UMSN-Face-Deblurring",
+      "bibtex": "./img/assests/reference/deblur.txt"
+    }
+  },
+  {
+    "title": "JHU-CROWD++: Large-scale crowd counting dataset and a benchmark method",
+    "authors": "Vishwanath A. Sindagi, Rajeev Yasarla, Vishal M Patel",
+    "authors_html": "Vishwanath A. Sindagi, <strong>Rajeev Yasarla</strong>, Vishal M Patel",
+    "venue": "IEEE TPAMI",
+    "year": 2020,
+    "image": "img/assests/crowd/network.png",
+    "image_alt": "JHU-CROWD++ dataset graphic",
+    "links": {
+      "pdf": "https://ieeexplore.ieee.org/abstract/document/9248596",
+      "bibtex": "./img/assests/reference/crowd.txt"
+    }
+  },
+  {
+    "title": "Uncertainty Guided Multi-Scale Residual Learning-Using a Cycle Spinning CNN for Single Image De-Raining",
+    "authors": "Rajeev Yasarla, Vishal M Patel",
+    "authors_html": "<strong>Rajeev Yasarla</strong>, Vishal M Patel",
+    "venue": "CVPR",
+    "year": 2019,
+    "image": "img/assests/umrl/network.png",
+    "image_alt": "UMRL architecture",
+    "links": {
+      "pdf": "https://openaccess.thecvf.com/content_CVPR_2019/papers/Yasarla_Uncertainty_Guided_Multi-Scale_Residual_Learning-Using_a_Cycle_Spinning_CNN_for_CVPR_2019_paper.pdf",
+      "code": "https://github.com/rajeevyasarla/UMRL--using-Cycle-Spinning",
+      "bibtex": "./img/assests/reference/urml.txt"
+    }
+  }
+]
