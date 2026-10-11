@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rajeev Yasarla — Senior ML Researcher (Computer Vision, Robotics)</title>
-  <meta name="description" content="Senior ML Researcher at Qualcomm AI Research. Research in Computer Vision, Vision-Language-Action for Robotics, end-to-end autonomous driving, video depth estimation, image restoration, segmentation, and domain adaptation. ICIP 2021 Best Paper.">
+  <meta name="description" content="Senior ML Researcher at Qualcomm AI Research. Research in computer vision, embodied AI, and end-to-end autonomous driving. GeRo and MAPLE accepted at NeurIPS 2026; ICIP 2021 Best Paper.">
   <link rel="canonical" href="https://rajeevyasarla.github.io/rajeev.github.io/">
 
   <!-- Favicon -->
@@ -32,12 +32,12 @@
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Rajeev Yasarla — Senior ML Researcher">
-  <meta property="og:description" content="CV/Research: VLA for Robotics, Autonomous Driving, Video Depth, Restoration.">
+  <meta property="og:description" content="Computer vision and embodied AI for robotics and autonomous driving. GeRo and MAPLE accepted at NeurIPS 2026.">
   <meta property="og:url" content="https://rajeevyasarla.github.io/rajeev.github.io/">
   <meta property="og:image" content="https://rajeevyasarla.github.io/rajeev.github.io/img/rajeev-2.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Rajeev Yasarla — Senior ML Researcher">
-  <meta name="twitter:description" content="ICIP 2021 Best Paper; CVPR/ECCV/ICCV/WACV publications.">
+  <meta name="twitter:description" content="GeRo and MAPLE accepted at NeurIPS 2026; ICIP 2021 Best Paper.">
   <meta name="twitter:image" content="https://rajeevyasarla.github.io/rajeev.github.io/img/rajeev-2.jpg">
 
   <!-- Google Site Verification (single instance) -->
@@ -45,7 +45,9 @@
 
   <style>
     body { font-family: 'Open Sans', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; }
-    header.hero { padding: 6rem 0 3rem; background: #afb1b3; color: #030303; }
+    header.hero { padding: 6rem 0 3rem; background: linear-gradient(135deg, #003b5c 0%, #056b7a 58%, #008c95 100%); color: #fff; }
+    header.hero .about_me a:not(.btn) { color: #e9ffff; text-decoration-color: rgba(233,255,255,.65); }
+    header.hero .about_me a:not(.btn):hover { color: #fff; }
     header.hero .name { font-weight: 800; letter-spacing: .3px; }
     .social-icons .btn { margin-right: .5rem; }
     .news-date { font-weight: 600; color: #6c757d; }
@@ -53,9 +55,12 @@
     .publ ul { padding-left: 1rem; margin-bottom: 0; }
     .publ li { display: inline; margin-right: 1rem; }
     .section-pad { padding-top: 4rem; padding-bottom: 4rem; }
+    section { scroll-margin-top: 4.5rem; }
     .light { border-top: 2px solid rgba(0,0,0,.1); width: 80px; margin: 1rem auto 2rem; }
     .navbar-brand strong { font-weight: 700; }
     .project-thumb { background-size: cover; background-position: center; width: 100%; height: 220px; border-radius: .5rem; }
+    .publication-figure { width: 100%; max-height: 180px; object-fit: contain; border: 1px solid #e6edf2; border-radius: .5rem; background: #f8fafc; }
+    .pub-note { font-size: .72rem; letter-spacing: .02em; vertical-align: middle; }
   </style>
 </head>
 <body>
@@ -133,7 +138,8 @@
         </div>
       </div>
       <ul class="list-unstyled">
-        <li class="row mb-2"><div class="col-4 col-md-3 news-date">May 2026</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">ICML 2026</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Oct 2026</div><div class="col-8 col-md-9"><strong>Two papers—GeRo and MAPLE—accepted at <span style="color:#E73916">NeurIPS 2026</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">May 2026</div><div class="col-8 col-md-9"><strong><em>RoCA</em> published at <span style="color:#E73916">ICML 2026</span>.</strong></div></li>
         <li class="row mb-2"><div class="col-4 col-md-3 news-date">Dec 2025</div><div class="col-8 col-md-9"><strong>Demo on autonomous driving presented at <span style="color:#E73916">NeurIPS 2025</span> and <span style="color:#E73916">CES 2026</span>.</strong></div></li>
         <li class="row mb-2"><div class="col-4 col-md-3 news-date">Feb 2025</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">CVPR 2025</span>.</strong></div></li>
         <li class="row mb-2"><div class="col-4 col-md-3 news-date">Oct 2024</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">WACV 2025</span>.</strong></div></li>
@@ -188,7 +194,7 @@
         </div>
       </div>
       <div id="pub-list" class="gy-4"></div>
-      <p class="text-muted mt-3"><small>* If marked, indicates equal contribution.</small></p>
+      <p class="text-muted mt-3"><small>Publication-status badges highlight accepted and published papers; * indicates equal contribution.</small></p>
     </div>
   </section>
 
@@ -263,9 +269,11 @@
     async function renderPublications() {
       try {
         const res = await fetch('publications.json', {cache: 'no-store'});
+        if (!res.ok) throw new Error(`Unable to load publications (${res.status})`);
         const pubs = await res.json();
         const container = document.getElementById('pub-list');
         if (!container) return;
+        container.replaceChildren();
 
         pubs.forEach(pub => {
           const row = document.createElement('div');
@@ -277,14 +285,14 @@
           img.src = pub.image;
           img.alt = pub.image_alt || ('Figure for ' + pub.title);
           img.loading = 'lazy';
-          img.width = 300; img.height = 140;
-          img.className = 'img-fluid';
+          img.decoding = 'async';
+          img.className = 'img-fluid publication-figure';
           colImg.appendChild(img);
 
           const colTxt = document.createElement('div');
           colTxt.className = 'col-sm-8 col-12';
-          const title = document.createElement('div');
-          title.className = 'pubt fw-semibold';
+          const title = document.createElement('h3');
+          title.className = 'pubt fw-semibold h5';
           title.textContent = pub.title;
 
           const authors = document.createElement('div');
@@ -293,7 +301,13 @@
 
           const venue = document.createElement('div');
           venue.className = 'pubv fw-semibold';
-          venue.textContent = `${pub.venue} ${pub.year}` + (pub.note ? ` — ${pub.note}` : '');
+          venue.textContent = `${pub.venue} ${pub.year}`;
+          if (pub.note) {
+            const note = document.createElement('span');
+            note.className = 'badge text-bg-success ms-2 pub-note';
+            note.textContent = pub.note;
+            venue.appendChild(note);
+          }
 
           const links = document.createElement('div');
           links.className = 'publ';
@@ -309,6 +323,7 @@
           }
 
           addLink('PDF', pub.links?.pdf, 'blue');
+          addLink('Demo', pub.links?.demo, '#6f42c1');
           addLink('Code', pub.links?.code, 'red');
           addLink('bibtex', pub.links?.bibtex, '#B87333');
           if (pub.links?.award) addLink('Best Paper Award', pub.links.award, 'rgb(0, 255, 64)');

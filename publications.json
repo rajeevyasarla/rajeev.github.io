@@ -3,13 +3,43 @@
     "title": "Generative Scenario Rollouts for End-to-End Autonomous Driving",
     "authors": "Rajeev Yasarla, Deepti Hegde, Shizhong Han, Hsin-Pai Cheng, Yunxiao Shi, Meysam Sadeghigooghari, Shweta Mahajan, Apratim Bhattacharyya, Litian Liu, Risheek Garrepalli, Thomas Svantesson, Fatih Porikli, Hong Cai",
     "authors_html": "<strong>Rajeev Yasarla</strong>, Deepti Hegde, Shizhong Han, Hsin-Pai Cheng, Yunxiao Shi, Meysam Sadeghigooghari, Shweta Mahajan, Apratim Bhattacharyya, Litian Liu, Risheek Garrepalli, Thomas Svantesson, Fatih Porikli, Hong Cai",
-    "venue": "arxiv",
+    "venue": "NeurIPS",
     "year": 2026,
+    "note": "Accepted",
     "image": "img/assets/GeRo/gero.png",
     "image_alt": "GeRo method teaser",
     "links": {
       "pdf": "https://arxiv.org/pdf/2601.11475",
       "bibtex": "./img/assets/reference/gero.txt"
+    }
+  },
+  {
+    "title": "MAPLE: Latent Multi-Agent Play for End-to-End Autonomous Driving",
+    "authors": "Rajeev Yasarla, Deepti Hegde, Hsin-Pai Cheng, Shizhong Han, Yunxiao Shi, Meysam Sadeghigooghari, H. Ackermann, Litian Liu, Parth Desai, Fatih Porikli, Mohammad Ghavamzadeh, Hong Cai",
+    "authors_html": "<strong>Rajeev Yasarla</strong>, Deepti Hegde, Hsin-Pai Cheng, Shizhong Han, Yunxiao Shi, Meysam Sadeghigooghari, H. Ackermann, Litian Liu, Parth Desai, Fatih Porikli, Mohammad Ghavamzadeh, Hong Cai",
+    "venue": "NeurIPS",
+    "year": 2026,
+    "note": "Accepted",
+    "image": "img/assets/MAPLE/maple.svg",
+    "image_alt": "MAPLE latent multi-agent play diagram",
+    "links": {
+      "pdf": "https://arxiv.org/pdf/2605.14201",
+      "bibtex": "./img/assets/reference/maple.txt"
+    }
+  },
+  {
+    "title": "RoCA: Robust Cross-Domain End-to-End Autonomous Driving",
+    "authors": "Rajeev Yasarla, Shizhong Han, Hsin-Pai Cheng, Litian Liu, Shweta Mahajan, Apratim Bhattacharyya, Yunxiao Shi, Risheek Garrepalli, Hong Cai, Fatih Porikli",
+    "authors_html": "<strong>Rajeev Yasarla</strong>, Shizhong Han, Hsin-Pai Cheng, Litian Liu, Shweta Mahajan, Apratim Bhattacharyya, Yunxiao Shi, Risheek Garrepalli, Hong Cai, Fatih Porikli",
+    "venue": "ICML",
+    "year": 2026,
+    "note": "Published",
+    "image": "img/assets/RoCA/ROCA_main.png",
+    "image_alt": "RoCA cross-domain autonomous-driving overview",
+    "links": {
+      "pdf": "https://arxiv.org/pdf/2506.10145v3",
+      "demo": "img/assets/RoCA/RoCA_vs_ORION_all_scenarios_vertical.mp4",
+      "bibtex": "./img/assets/reference/roca.txt"
     }
   },
   {

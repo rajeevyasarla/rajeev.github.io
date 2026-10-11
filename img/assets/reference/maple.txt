@@ -1,0 +1,7 @@
+@inproceedings{yasarla2026maple,
+  title={MAPLE: Latent Multi-Agent Play for End-to-End Autonomous Driving},
+  author={Yasarla, Rajeev and Hegde, Deepti and Cheng, Hsin-Pai and Han, Shizhong and Shi, Yunxiao and Sadeghigooghari, Meysam and Ackermann, H. and Liu, Litian and Desai, Parth and Porikli, Fatih and Ghavamzadeh, Mohammad and Cai, Hong},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2026},
+  note={Accepted}
+}

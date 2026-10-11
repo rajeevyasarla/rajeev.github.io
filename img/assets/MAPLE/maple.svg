@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
+  <title id="title">MAPLE: latent multi-agent play</title>
+  <desc id="desc">An abstract diagram showing an ego agent and neighbouring agents interacting through a shared latent world model.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef7f8"/>
+      <stop offset="1" stop-color="#e6edf6"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#074f64"/>
+      <stop offset="1" stop-color="#0b8a91"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="9" flood-color="#003b5c" flood-opacity=".16"/>
+    </filter>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#458493"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" rx="28" fill="url(#bg)"/>
+  <text x="600" y="74" text-anchor="middle" font-family="Open Sans, Arial, sans-serif" font-size="38" font-weight="700" fill="#003b5c">MAPLE</text>
+  <text x="600" y="112" text-anchor="middle" font-family="Open Sans, Arial, sans-serif" font-size="22" fill="#4f6976">Latent Multi-Agent Play for End-to-End Autonomous Driving</text>
+  <g stroke="#458493" stroke-width="5" fill="none" marker-end="url(#arrow)">
+    <path d="M312 242 C390 210, 420 198, 474 211"/>
+    <path d="M888 242 C810 210, 780 198, 726 211"/>
+    <path d="M323 374 C396 362, 425 347, 473 328"/>
+    <path d="M877 374 C804 362, 775 347, 727 328"/>
+    <path d="M520 414 C485 458, 413 462, 360 440"/>
+    <path d="M680 414 C715 458, 787 462, 840 440"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="440" y="168" width="320" height="250" rx="28" fill="url(#core)"/>
+    <circle cx="600" cy="251" r="42" fill="#d5f3f3" opacity=".95"/>
+    <path d="M575 251h50M600 226v50" stroke="#08727b" stroke-width="8" stroke-linecap="round"/>
+    <text x="600" y="324" text-anchor="middle" font-family="Open Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#fff">Shared latent</text>
+    <text x="600" y="356" text-anchor="middle" font-family="Open Sans, Arial, sans-serif" font-size="27" font-weight="700" fill="#fff">world model</text>
+    <text x="600" y="389" text-anchor="middle" font-family="Open Sans, Arial, sans-serif" font-size="16" fill="#d5f3f3">reactive interactions · diverse rollouts</text>
+  </g>
+  <g font-family="Open Sans, Arial, sans-serif" text-anchor="middle" filter="url(#shadow)">
+    <rect x="112" y="174" width="210" height="136" rx="22" fill="#fff"/>
+    <circle cx="217" cy="218" r="28" fill="#ef8b57"/>
+    <path d="M203 218h28M217 204v28" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+    <text x="217" y="278" font-size="23" font-weight="700" fill="#003b5c">Ego agent</text>
+    <rect x="878" y="174" width="210" height="136" rx="22" fill="#fff"/>
+    <circle cx="983" cy="218" r="28" fill="#6876c6"/>
+    <path d="M969 218h28M983 204v28" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+    <text x="983" y="278" font-size="23" font-weight="700" fill="#003b5c">Agent policy</text>
+    <rect x="112" y="350" width="250" height="116" rx="22" fill="#fff"/>
+    <text x="237" y="398" font-size="22" font-weight="700" fill="#003b5c">Counterfactual futures</text>
+    <text x="237" y="431" font-size="18" fill="#4f6976">alternative actions</text>
+    <rect x="838" y="350" width="250" height="116" rx="22" fill="#fff"/>
+    <text x="963" y="398" font-size="22" font-weight="700" fill="#003b5c">Policy learning</text>
+    <text x="963" y="431" font-size="18" fill="#4f6976">safety-critical behavior</text>
+  </g>
+</svg>
