@@ -1,4 +1,5 @@
 """Read-only content, HTML, local asset, citation, and public-CV checks."""
+import hashlib
 import json
 from html.parser import HTMLParser
 from pathlib import Path
@@ -94,6 +95,27 @@ projects = ["I led MAMo (ICCV 2023)", "FutureDepth (ECCV 2024)",
 positions = [html.index(name) for name in projects]
 assert positions == sorted(positions), "Project leadership list is not chronological"
 
+demo = ROOT / "img/assets/MAPLE/MAPLE_vs_DeepSight_highlights.mp4"
+demo_manifest = json.loads(demo.with_suffix(".json").read_text())
+demo_info = json.loads(subprocess.check_output([
+    "ffprobe", "-v", "error", "-show_streams", "-show_format", "-of", "json", str(demo)
+], text=True))
+demo_video = next(stream for stream in demo_info["streams"] if stream["codec_type"] == "video")
+assert float(demo_info["format"]["duration"]) == 27 and demo_manifest["duration_seconds"] == 27
+assert demo_video["codec_name"] == "h264" and demo_video["pix_fmt"] == "yuv420p"
+assert (demo_video["width"], demo_video["height"]) == (1920, 660)
+assert int(demo_video["nb_frames"]) == 324
+assert not any(stream["codec_type"] == "audio" for stream in demo_info["streams"])
+assert demo.stat().st_size < 20 * 1024 * 1024
+assert demo_manifest["same_elapsed_simulation_time"] and demo_manifest["playback_speed_vs_simulation"] == 2
+assert len(demo_manifest["source_segments"]) == 3
+assert hashlib.sha256(demo.read_bytes()).hexdigest() == demo_manifest["video_sha256"]
+assert hashlib.sha256(demo.with_suffix(".jpg").read_bytes()).hexdigest() == demo_manifest["poster_sha256"]
+assert [segment["output_end_seconds"] - segment["output_start_seconds"]
+        for segment in demo_manifest["source_segments"]] == [9, 9, 9]
+assert 'preload="none" poster="img/assets/MAPLE/MAPLE_vs_DeepSight_highlights.jpg"' in html
+assert 'src="img/assets/MAPLE/MAPLE_vs_DeepSight_highlights.mp4" type="video/mp4"' in html
+
 news = re.search(r'<section id="news-list"[^>]*>.*?</section>', html, re.S).group(0)
 entries = re.findall(r'<li class="row mb-2">.*?</li>', news, re.S)
 months = {name: index for index, name in enumerate(
@@ -158,4 +180,4 @@ assert not re.search(r"Overfull|Missing character|Undefined control sequence",
 print("PASS: balanced HTML, metadata, all local assets/anchors, 14 publications,")
 print("updated paper versions/authors, unique BibTeX keys, chronological projects,")
 print("confirmed news dates/order, requested teaching removals, unbolded course names,")
-print("and five-page public Staff Researcher CV.")
+print("27-second synchronized MAPLE demo, and five-page public Staff Researcher CV.")

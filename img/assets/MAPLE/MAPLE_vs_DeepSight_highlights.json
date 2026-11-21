@@ -1,0 +1,57 @@
+{
+  "video": "MAPLE_vs_DeepSight_highlights.mp4",
+  "poster": "MAPLE_vs_DeepSight_highlights.jpg",
+  "duration_seconds": 27.0,
+  "frame_rate": 12,
+  "dimensions": [
+    1920,
+    660
+  ],
+  "total_frames": 324,
+  "playback_speed_vs_simulation": 2,
+  "layout": "MAPLE left / DeepSight right; original front views and BEV insets",
+  "same_elapsed_simulation_time": true,
+  "edits": "Three continuous excerpts, hard cuts only; no extra speedup or motion interpolation.",
+  "interpretation": "Selected simulated routes, not aggregate benchmark evidence. Incomplete DeepSight result statuses are not classified as failures.",
+  "source_segments": [
+    {
+      "source": "MAPLE_vs_DeepSight_25424_construction_obstacles.mp4",
+      "source_sha256": "671cc540568deda3f9380e4f44f28183965080729b8c5eb968457a9cce29a62e",
+      "case": "25424",
+      "scenario": "construction obstacles",
+      "source_start_seconds": 6,
+      "source_end_seconds": 15,
+      "output_start_seconds": 0,
+      "output_end_seconds": 9,
+      "nominal_simulation_start_seconds": 12,
+      "nominal_simulation_end_seconds": 30
+    },
+    {
+      "source": "MAPLE_vs_DeepSight_27494_blocked_intersection.mp4",
+      "source_sha256": "ca9fcd77390824225eee9eda86b5cb86cd39de6711e4e893f4e72c5f972d7895",
+      "case": "27494",
+      "scenario": "blocked intersection",
+      "source_start_seconds": 15,
+      "source_end_seconds": 24,
+      "output_start_seconds": 9,
+      "output_end_seconds": 18,
+      "nominal_simulation_start_seconds": 30,
+      "nominal_simulation_end_seconds": 48
+    },
+    {
+      "source": "MAPLE_vs_DeepSight_28198_left_turn_into_traffic.mp4",
+      "source_sha256": "aaa3e9759e49e4e0ca7a5303215190bb68d8831535ea69cb69c0e8f3e945e97b",
+      "case": "28198",
+      "scenario": "left turn into traffic",
+      "source_start_seconds": 35,
+      "source_end_seconds": 44,
+      "output_start_seconds": 18,
+      "output_end_seconds": 27,
+      "nominal_simulation_start_seconds": 70,
+      "nominal_simulation_end_seconds": 88
+    }
+  ],
+  "video_sha256": "b999fab432dec951445b0d81e460e1f0acaa5b82e4110cc210c9b7a4f83c47d4",
+  "poster_sha256": "48094cb8b39114240cedbfed2543cb418563e0f1f3375a5797d00c507e6c6494",
+  "video_bytes": 4401950
+}

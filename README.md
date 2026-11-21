@@ -33,3 +33,21 @@ RoCA video are integrated without changing historical publications or assets.
 
 GitHub Pages publishing uses the existing `main` branch. Never put credentials
 in a remote URL, source file, or commit.
+
+## MAPLE comparison demo
+
+The homepage includes one 27-second MAPLE vs DeepSight reel, combining continuous
+nine-second highlights from construction obstacles, a blocked intersection, and
+a left turn into traffic. It retains the source comparison's synchronized views,
+method labels, simulation timestamps, bird's-eye insets, and 2x playback. These
+selected simulated routes are illustrative, not aggregate benchmark evidence;
+incomplete DeepSight result statuses are not classified as failures.
+
+To reproduce it from the existing comparison exports (without overwriting assets):
+
+```bash
+python3 scripts/build_maple_demo.py /path/to/visualization/MAPLE_vs_DeepSight
+```
+
+The MP4 uses H.264/yuv420p with fast-start metadata and no audio. The matching
+JSON records source hashes, excerpt times, output hashes, and encoding properties.
