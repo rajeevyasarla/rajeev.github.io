@@ -84,7 +84,8 @@ for filename in ("index.html", "publications.json", "README.md", "files/CV.tex")
 assert "I am a Staff Researcher" in html
 assert document.scripts[0]["jobTitle"] == "Staff Researcher"
 assert "calibrated transfer" not in html
-assert "clarity, evidence, and independence" in html
+assert "My goal as an educator is to help students become independent technical thinkers" not in html
+assert "My mentoring model centers on clarity, evidence, and independence" not in html
 assert "NeurIPS 2025, CES 2026, and CVPR 2026" in html
 assert not re.search(r"<strong>(?:EN\.520\.344|EE4371|EE1100)</strong>", html)
 projects = ["I led MAMo (ICCV 2023)", "FutureDepth (ECCV 2024)",
@@ -92,6 +93,25 @@ projects = ["I led MAMo (ICCV 2023)", "FutureDepth (ECCV 2024)",
             "MAPLE (NeurIPS 2026)"]
 positions = [html.index(name) for name in projects]
 assert positions == sorted(positions), "Project leadership list is not chronological"
+
+news = re.search(r'<section id="news-list"[^>]*>.*?</section>', html, re.S).group(0)
+entries = re.findall(r'<li class="row mb-2">.*?</li>', news, re.S)
+months = {name: index for index, name in enumerate(
+    ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"), 1)}
+news_dates = []
+for entry in entries:
+    match = re.search(r'news-date">([A-Z][a-z]{2}) (\d{4})</div>', entry)
+    assert match, "News entries must have a confirmed month and year"
+    news_dates.append((int(match[2]), months[match[1]]))
+assert news_dates == sorted(news_dates, reverse=True), "News must be newest first"
+for marker, date in (
+    ("Promoted to", "Nov 2026"),
+    ("Safe and Defensive Autonomous Driving Workshop", "Sep 2026"),
+    ("Area Chair for WACV 2027", "Jul 2026"),
+    ("<em>RoCA</em>", "Jul 2026"),
+):
+    entry = next(entry for entry in entries if marker in entry)
+    assert f'news-date">{date}</div>' in entry, f"Incorrect date for {marker}"
 
 pubs = json.loads((ROOT / "publications.json").read_text())
 assert len(pubs) == 14
@@ -137,4 +157,5 @@ assert not re.search(r"Overfull|Missing character|Undefined control sequence",
                      (ROOT / "files/CV.log").read_text())
 print("PASS: balanced HTML, metadata, all local assets/anchors, 14 publications,")
 print("updated paper versions/authors, unique BibTeX keys, chronological projects,")
-print("mentoring values, unbolded course names, and five-page public Staff Researcher CV.")
+print("confirmed news dates/order, requested teaching removals, unbolded course names,")
+print("and five-page public Staff Researcher CV.")

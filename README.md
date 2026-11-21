@@ -14,8 +14,10 @@ materials and the latest supplied MAPLE v3, GeRo v2, and RoCA v3 manuscripts.
 Acceptance, promotion, awards, and demo-leadership descriptions follow the
 applicant's records. No live Scholar counts were inferred; CV statistics remain
 explicitly dated October 30, 2026. The public CV omits referee contact details.
-Promotion and award announcements use only a year where a precise date was not
-supplied. WACV 2027 is a forthcoming Area Chair appointment, not a past event.
+The applicant confirmed the news months: RoCA and WACV Area Chair selection in
+July 2026, the SDAD honorable mention in September 2026, and the Staff Researcher
+promotion in November 2026. News is ordered newest first. WACV 2027 is a
+forthcoming Area Chair appointment, not a past event.
 
 Build `files/CV.tex` with `files/resume.cls` using Tectonic or pdfLaTeX, then
 run the read-only checks:
@@ -26,8 +28,8 @@ python3 -m http.server 8000
 ```
 
 Preview through HTTP so the publication JSON loads. The site retains its
-existing Bootstrap design; research, mentoring, service, and the existing RoCA
-video are integrated without changing historical publications or assets.
+existing Bootstrap design; research, teaching history, service, and the existing
+RoCA video are integrated without changing historical publications or assets.
 
 GitHub Pages publishing uses the existing `main` branch. Never put credentials
 in a remote URL, source file, or commit.
