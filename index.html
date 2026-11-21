@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rajeev Yasarla — Senior ML Researcher (Computer Vision, Robotics)</title>
-  <meta name="description" content="Senior ML Researcher at Qualcomm AI Research. Research in computer vision, embodied AI, and end-to-end autonomous driving. GeRo and MAPLE accepted at NeurIPS 2026; ICIP 2021 Best Paper.">
+  <title>Rajeev Yasarla — Staff Researcher (Computer Vision, Embodied AI)</title>
+  <meta name="description" content="Staff Researcher at Qualcomm AI Research developing predictive visual intelligence for robust embodied agents. Research in world models, computer vision, and autonomous driving.">
   <link rel="canonical" href="https://rajeevyasarla.github.io/rajeev.github.io/">
 
   <!-- Favicon -->
@@ -31,13 +31,13 @@
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Rajeev Yasarla — Senior ML Researcher">
-  <meta property="og:description" content="Computer vision and embodied AI for robotics and autonomous driving. GeRo and MAPLE accepted at NeurIPS 2026.">
+  <meta property="og:title" content="Rajeev Yasarla — Staff Researcher">
+  <meta property="og:description" content="Predictive visual intelligence for robust embodied agents. World models, computer vision, and autonomous driving; MAPLE and GeRo at NeurIPS 2026.">
   <meta property="og:url" content="https://rajeevyasarla.github.io/rajeev.github.io/">
   <meta property="og:image" content="https://rajeevyasarla.github.io/rajeev.github.io/img/rajeev-2.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Rajeev Yasarla — Senior ML Researcher">
-  <meta name="twitter:description" content="GeRo and MAPLE accepted at NeurIPS 2026; ICIP 2021 Best Paper.">
+  <meta name="twitter:title" content="Rajeev Yasarla — Staff Researcher">
+  <meta name="twitter:description" content="Staff Researcher at Qualcomm AI Research. Predictive world models and robust embodied AI; MAPLE and GeRo at NeurIPS 2026.">
   <meta name="twitter:image" content="https://rajeevyasarla.github.io/rajeev.github.io/img/rajeev-2.jpg">
 
   <!-- Google Site Verification (single instance) -->
@@ -61,12 +61,17 @@
     .project-thumb { background-size: cover; background-position: center; width: 100%; height: 220px; border-radius: .5rem; }
     .publication-figure { width: 100%; max-height: 180px; object-fit: contain; border: 1px solid #e6edf2; border-radius: .5rem; background: #f8fafc; }
     .pub-note { font-size: .72rem; letter-spacing: .02em; vertical-align: middle; }
+    .research-card { height: 100%; padding: 1.5rem; border: 1px solid #e6edf2; border-radius: .5rem; background: #f8fafc; }
+    .demo-video { display: block; width: 100%; max-height: 480px; background: #111; border-radius: .5rem; }
+    .skip-link { position: fixed; top: -5rem; left: 1rem; z-index: 1100; padding: .75rem 1rem; background: #fff; color: #003b5c; }
+    .skip-link:focus { top: .5rem; }
   </style>
 </head>
 <body>
 
   <!-- Navbar (Bootstrap 5) -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top shadow-sm">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm" aria-label="Main navigation">
     <div class="container">
       <a class="navbar-brand" href="#page-top"><strong>Rajeev Yasarla</strong></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,9 +79,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
+          <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news-list">News</a></li>
+          <li class="nav-item"><a class="nav-link" href="#teaching">Teaching &amp; Mentoring</a></li>
           <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects &amp; Demos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
           <li class="nav-item"><a class="nav-link" href="./files/CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
         </ul>
       </div>
@@ -94,13 +102,19 @@
           <h1 class="name h2 mb-3">Rajeev Yasarla</h1>
           <div class="about_me">
             <p class="mb-3" style="text-align: justify;">
-              I am a Senior Machine Learning Researcher at
+              I am a Staff Researcher at
               <a href="https://www.qualcomm.com/research/artificial-intelligence/ai-research" target="_blank" rel="noopener noreferrer"><strong>Qualcomm AI Research</strong></a>,
-              with a Ph.D. in Electrical Engineering from Johns Hopkins University (advised by Dr. Vishal M. Patel).
-              My research spans Computer Vision, Machine Learning, 3D Vision, and Robotics. I have worked on
-              Vision-Language-Action (VLA) models for Robotics and end-to-end autonomous driving, video depth estimation,
-              image restoration/enhancement, image segmentation, and domain adaptation. I received the
-              <span class="badge text-bg-success">Best Paper Award — IEEE ICIP 2021</span>.
+              with a Ph.D. in Electrical Engineering from Johns Hopkins University (advised by Dr. Vishal M. Patel)
+              and B.Tech. and M.Tech. degrees in Electrical Engineering from IIT Madras.
+              I develop <strong>predictive visual intelligence for robust embodied agents</strong>:
+              models that understand dynamic 3D/4D scenes, anticipate the consequences of actions,
+              and act reliably when environments change.
+            </p>
+            <p class="mb-3">
+              My research connects uncertainty-aware and data-efficient learning, temporal perception,
+              vision-language-action (VLA) models, and latent world models to robotics and autonomous driving.
+              Earlier work spans image restoration, segmentation, and domain adaptation.
+              I received the <span class="badge text-bg-success">Best Paper Award — IEEE ICIP 2021</span>.
             </p>
 
             <p class="mb-2" style="text-align: justify;">I had the opportunity to intern at:</p>
@@ -122,11 +136,55 @@
             <a href="https://www.linkedin.com/in/rajeev-yasarla-7275205b/" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a>
             <a href="https://www.semanticscholar.org/author/R.-Yasarla/20622859" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer" aria-label="Semantic Scholar"><i class="ai ai-semantic-scholar"></i></a>
             <a href="https://github.com/rajeevyasarla" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa fa-fw fa-github"></i></a>
+            <a href="mailto:rajeevyasarla19@gmail.com" class="btn btn-outline-light btn-sm">Email</a>
+            <a href="./files/CV.pdf" class="btn btn-outline-light btn-sm" target="_blank" rel="noopener noreferrer">CV</a>
           </div>
         </div>
       </div>
     </div>
   </header>
+
+  <main id="main-content" tabindex="-1">
+  <!-- Research -->
+  <section id="research" class="section-pad">
+    <div class="container">
+      <div class="text-center">
+        <h2>Research</h2>
+        <hr class="light">
+      </div>
+      <p>My research has progressed from reliable perception to predictive action. The central question is:
+        how can an embodied agent learn a world model that helps it choose reliable actions, not merely
+        generate plausible predictions? My agenda connects three directions.</p>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <article class="research-card">
+            <h3 class="h5">Decision-sufficient world states</h3>
+            <p class="mb-0">Learn compact representations of geometry, moving actors, goals, and uncertainty.
+              Preserve what matters for action while distinguishing supported inference from extrapolation.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="research-card">
+            <h3 class="h5">Counterfactual latent experience</h3>
+            <p class="mb-0">Generate action-conditioned futures and reactive multi-agent interactions
+              missing from logged data, and use them to train and evaluate policies in challenging situations.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="research-card">
+            <h3 class="h5">Risk-adaptive reasoning</h3>
+            <p class="mb-0">Acquire additional evidence and spend computation when uncertainty or consequence
+              warrants it. Evaluate whether confidence matches accuracy, models generalize, and agents act
+              reliably in closed-loop tests.</p>
+          </article>
+        </div>
+      </div>
+      <p class="mt-4 mb-0">At Qualcomm, I led MAMo (ICCV 2023), FutureDepth (ECCV 2024),
+        multimodal-LLM distillation (DiMA, CVPR 2025), RoCA (ICML 2026), GeRo (NeurIPS 2026),
+        and MAPLE (NeurIPS 2026). I also led live VLA driving demonstrations on the Snapdragon Ride
+        platform at NeurIPS 2025, CES 2026, and CVPR 2026.</p>
+    </div>
+  </section>
 
   <!-- News -->
   <section id="news-list" class="section-pad">
@@ -138,9 +196,14 @@
         </div>
       </div>
       <ul class="list-unstyled">
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">2026</div><div class="col-8 col-md-9">Promoted to <strong>Staff Researcher</strong> at Qualcomm AI Research.</div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">2026</div><div class="col-8 col-md-9">Selected to serve as an <strong>Area Chair for WACV 2027</strong>.</div></li>
         <li class="row mb-2"><div class="col-4 col-md-3 news-date">Oct 2026</div><div class="col-8 col-md-9"><strong>Two papers—GeRo and MAPLE—accepted at <span style="color:#E73916">NeurIPS 2026</span>.</strong></div></li>
-        <li class="row mb-2"><div class="col-4 col-md-3 news-date">May 2026</div><div class="col-8 col-md-9"><strong><em>RoCA</em> published at <span style="color:#E73916">ICML 2026</span>.</strong></div></li>
-        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Dec 2025</div><div class="col-8 col-md-9"><strong>Demo on autonomous driving presented at <span style="color:#E73916">NeurIPS 2025</span> and <span style="color:#E73916">CES 2026</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">2026</div><div class="col-8 col-md-9">Best Paper Honorable Mention at the <strong>Safe and Defensive Autonomous Driving Workshop, ECCV 2026</strong>; honorable mention at the Wearables AI Workshop.</div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">2026</div><div class="col-8 col-md-9"><strong><em>RoCA</em> at <span style="color:#E73916">ICML 2026</span>.</strong></div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Jun 2026</div><div class="col-8 col-md-9">Led live VLA driving demonstrations and co-organized the <a href="https://varworkshop.github.io/organizers/" target="_blank" rel="noopener noreferrer">Vision-based Assistants in the Real World (VAR) Workshop</a> at <strong>CVPR 2026</strong>.</div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Jan 2026</div><div class="col-8 col-md-9">Led a live VLA driving demonstration on Snapdragon Ride at <strong>CES 2026</strong>.</div></li>
+        <li class="row mb-2"><div class="col-4 col-md-3 news-date">Dec 2025</div><div class="col-8 col-md-9">Led a live VLA driving demonstration on Snapdragon Ride at <strong>NeurIPS 2025</strong>.</div></li>
         <li class="row mb-2"><div class="col-4 col-md-3 news-date">Feb 2025</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">CVPR 2025</span>.</strong></div></li>
         <li class="row mb-2"><div class="col-4 col-md-3 news-date">Oct 2024</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">WACV 2025</span>.</strong></div></li>
         <li class="row mb-2"><div class="col-4 col-md-3 news-date">Jul 2024</div><div class="col-8 col-md-9"><strong>One paper accepted at <span style="color:#E73916">ECCV 2024</span>.</strong></div></li>
@@ -170,16 +233,26 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2>Teaching</h2>
+          <h2>Teaching &amp; Mentoring</h2>
           <hr class="light">
         </div>
       </div>
+      <p>My goal as an educator is to help students become independent technical thinkers:
+        able to derive an idea, test it in a real system, explain why it succeeds or fails, and judge its
+        consequences. I link abstractions to systems students can manipulate, make reasoning visible
+        through active and staged assessment, and gradually transfer ownership to the student.</p>
+      <p>My mentoring model centers on clarity, evidence, and independence. I mentor graduate
+        collaborators, research interns, junior researchers, and external Ph.D. students through the
+        Qualcomm Innovation Fellowship, from precise research questions and reproducible baselines
+        to writing, presentation, and intellectual ownership. Clear expectations, individualized
+        support, and a classroom where questions and productive failure are normal help students
+        find confidence in their own scientific voice.</p>
       <ul>
-        <li><strong>Teaching Assistant:</strong> Introduction to Digital Signal Processing <a href="https://e-catalogue.jhu.edu/course-descriptions/electrical___computer_engineering/" target="_blank" rel="noopener noreferrer" style="color:blue;"><strong>EN.520.344</strong></a>, Fall 2021, ECE Dept., WSE, Johns Hopkins University.</li>
-        <li><strong>Teaching Assistant:</strong> Introduction to Digital Signal Processing <a href="https://e-catalogue.jhu.edu/course-descriptions/electrical___computer_engineering/" target="_blank" rel="noopener noreferrer" style="color:blue;"><strong>EN.520.344</strong></a>, Fall 2020, ECE Dept., WSE, Johns Hopkins University.</li>
-        <li><strong>Teaching Assistant:</strong> Introduction to Digital Signal Processing <a href="https://e-catalogue.jhu.edu/course-descriptions/electrical___computer_engineering/" target="_blank" rel="noopener noreferrer" style="color:blue;"><strong>EN.520.344</strong></a>, Fall 2019, ECE Dept., WSE, Johns Hopkins University.</li>
-        <li><strong>Teaching Assistant:</strong> Introduction to Data Structures and Algorithms <a href="https://www.ee.iitm.ac.in/courses/syllabus/EE4371" target="_blank" rel="noopener noreferrer" style="color:blue;"><strong>EE4371</strong></a>, Spring 2016, Dept. of Electrical Eng., IIT Madras.</li>
-        <li><strong>Teaching Assistant:</strong> Basic Electrical Engineering <a href="https://www.ee.iitm.ac.in/courses/syllabus/EE1100" target="_blank" rel="noopener noreferrer" style="color:blue;"><strong>EE1100</strong></a>, Fall 2015, Dept. of Electrical Eng., IIT Madras.</li>
+        <li><strong>Teaching Assistant:</strong> Introduction to Digital Signal Processing <a href="https://e-catalogue.jhu.edu/course-descriptions/electrical___computer_engineering/" target="_blank" rel="noopener noreferrer" style="color:blue;">EN.520.344</a>, Fall 2021, ECE Dept., WSE, Johns Hopkins University.</li>
+        <li><strong>Teaching Assistant:</strong> Introduction to Digital Signal Processing <a href="https://e-catalogue.jhu.edu/course-descriptions/electrical___computer_engineering/" target="_blank" rel="noopener noreferrer" style="color:blue;">EN.520.344</a>, Fall 2020, ECE Dept., WSE, Johns Hopkins University.</li>
+        <li><strong>Teaching Assistant:</strong> Introduction to Digital Signal Processing <a href="https://e-catalogue.jhu.edu/course-descriptions/electrical___computer_engineering/" target="_blank" rel="noopener noreferrer" style="color:blue;">EN.520.344</a>, Fall 2019, ECE Dept., WSE, Johns Hopkins University.</li>
+        <li><strong>Teaching Assistant:</strong> Introduction to Data Structures and Algorithms <a href="https://www.ee.iitm.ac.in/courses/syllabus/EE4371" target="_blank" rel="noopener noreferrer" style="color:blue;">EE4371</a>, Spring 2016, Dept. of Electrical Eng., IIT Madras.</li>
+        <li><strong>Teaching Assistant:</strong> Basic Electrical Engineering <a href="https://www.ee.iitm.ac.in/courses/syllabus/EE1100" target="_blank" rel="noopener noreferrer" style="color:blue;">EE1100</a>, Fall 2015, Dept. of Electrical Eng., IIT Madras.</li>
       </ul>
     </div>
   </section>
@@ -193,7 +266,8 @@
           <hr class="light">
         </div>
       </div>
-      <div id="pub-list" class="gy-4"></div>
+      <div id="pub-list" class="gy-4" aria-live="polite"></div>
+      <noscript><p>JavaScript is disabled. See my <a href="https://scholar.google.com/citations?user=R8dwrxEAAAAJ">Google Scholar profile</a> or <a href="./files/CV.pdf">CV</a> for publications.</p></noscript>
       <p class="text-muted mt-3"><small>Publication-status badges highlight accepted and published papers; * indicates equal contribution.</small></p>
     </div>
   </section>
@@ -203,12 +277,24 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2>Projects</h2>
+          <h2>Projects &amp; Demos</h2>
           <hr class="light">
         </div>
       </div>
 
       <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <article>
+            <h3 class="h5">RoCA: Cross-domain autonomous driving</h3>
+            <video class="demo-video" controls playsinline preload="none" poster="img/assets/RoCA/ROCA_main.png" aria-label="RoCA and ORION closed-loop driving comparison">
+              <source src="img/assets/RoCA/RoCA_vs_ORION_all_scenarios_vertical.mp4" type="video/mp4">
+              Your browser does not support embedded video.
+            </video>
+            <p class="mt-2 mb-1">A research comparison of RoCA and ORION across driving scenarios.</p>
+            <p class="mb-0"><a href="https://arxiv.org/pdf/2506.10145v3" target="_blank" rel="noopener noreferrer">Paper</a>
+              &middot; <a href="img/assets/RoCA/RoCA_vs_ORION_all_scenarios_vertical.mp4">Open demo video</a></p>
+          </article>
+        </div>
         <div class="col-12 col-md-6">
           <a href="https://eescholars.iitm.ac.in/sites/default/files/eethesis/ee11b080.pdf" class="text-decoration-none" target="_blank" rel="noopener noreferrer">
             <div class="project-thumb" style="background-image:url('projects/dual-degree/fin-ppt.gif');" aria-label="Masters Project: Pedestrian detection and tracking for driver assistance"></div>
@@ -223,9 +309,26 @@
     </div>
   </section>
 
+  <!-- Service -->
+  <section id="service" class="section-pad">
+    <div class="container">
+      <div class="text-center">
+        <h2>Service &amp; Leadership</h2>
+        <hr class="light">
+      </div>
+      <ul>
+        <li>Area Chair, WACV 2027.</li>
+        <li>Co-organizer, <a href="https://varworkshop.github.io/organizers/" target="_blank" rel="noopener noreferrer">Vision-based Assistants in the Real World (VAR) Workshop</a>, CVPR 2026.</li>
+        <li>Reviewer for NeurIPS, ICLR, CVPR, ICCV, ECCV, WACV, IEEE TIP, IJCV, and other vision and learning venues.</li>
+        <li>Lead Coordinator, Shaastra Circuit Design Challenge, IIT Madras, 2014; team lead for the first-prize receiver-design team, National Fox Hunt Event, Shaastra 2013.</li>
+      </ul>
+    </div>
+  </section>
+  </main>
+
   <footer class="py-4 border-top">
     <div class="container small text-center text-muted">
-      © <span id="year"></span> Rajeev Yasarla
+      © <span id="year"></span> Rajeev Yasarla &middot; Updated November 21, 2026
     </div>
   </footer>
 
@@ -235,7 +338,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Rajeev Yasarla",
-    "jobTitle": "Senior Machine Learning Researcher",
+    "jobTitle": "Staff Researcher",
     "affiliation": {
       "@type": "Organization",
       "name": "Qualcomm AI Research",
@@ -297,7 +400,8 @@
 
           const authors = document.createElement('div');
           authors.className = 'puba';
-          authors.innerHTML = pub.authors_html || pub.authors;
+          if (pub.authors_html) authors.innerHTML = pub.authors_html;
+          else authors.textContent = pub.authors;
 
           const venue = document.createElement('div');
           venue.className = 'pubv fw-semibold';
@@ -326,7 +430,7 @@
           addLink('Demo', pub.links?.demo, '#6f42c1');
           addLink('Code', pub.links?.code, 'red');
           addLink('bibtex', pub.links?.bibtex, '#B87333');
-          if (pub.links?.award) addLink('Best Paper Award', pub.links.award, 'rgb(0, 255, 64)');
+          if (pub.links?.award) addLink('Best Paper Award', pub.links.award, '#146c43');
 
           links.appendChild(ul);
 
@@ -342,6 +446,12 @@
         });
       } catch (e) {
         console.error('Failed to render publications', e);
+        const container = document.getElementById('pub-list');
+        if (container) {
+          const message = document.createElement('p');
+          message.textContent = 'Publications could not be loaded. Please see my CV or Google Scholar profile.';
+          container.replaceChildren(message);
+        }
       }
     }
 

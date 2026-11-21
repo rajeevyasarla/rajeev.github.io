@@ -1,0 +1,263 @@
+\documentclass[margin,11pt]{resume}
+
+% Packages
+\usepackage{multicol}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=NavyBlue,breaklinks=true}
+\urlstyle{same}
+\renewcommand{\thefootnote}{\textcolor{Red}{\arabic{footnote}}}
+\usepackage{array,multirow}
+\usepackage{enumitem}
+\setlength{\emergencystretch}{2em}
+
+% Macros
+\def\Cplusplus{{\rm C\raise.5ex\hbox{\small ++}}}
+\def\CSharp{{\rm C\raise.5ex\hbox{\small \#}}}
+\def\first{{\raise.5ex\hbox{\small st }}}
+\def\second{{\raise.5ex\hbox{\small nd }}}
+\def\third{{\raise.5ex\hbox{\small rd }}}
+\def\fourth{{\raise.5ex\hbox{\small th }}}
+\def\foota{{\raise.7ex\hbox{\small 1}}}
+\def\footc{{\raise.7ex\hbox{\small 2}}}
+\def\footd{{\raise.7ex\hbox{\small 3}}}
+\def\X#1{$#1$ \tt\string#1}
+
+% Page layout
+\hoffset=70pt
+\topmargin=0pt
+\oddsidemargin=0pt
+\evensidemargin=0pt
+\textwidth=420pt
+\marginparwidth=0pt
+\marginparsep=0pt
+\headheight=0pt
+\headsep=0pt
+\textheight=8.5in
+\addtolength{\oddsidemargin}{-5mm}
+\addtolength{\evensidemargin}{5mm}
+\addtolength{\textwidth}{5mm}
+\addtolength{\topmargin}{-13mm}
+\addtolength{\textheight}{40mm}
+
+\begin{document}
+
+\moveleft0.5\hoffset\centerline{\Large \bf Rajeev Yasarla}
+\moveleft0.6\hoffset\centerline{\line(1,0){526}}
+
+\section{\footnotesize {\normalsize C}ONTACT\\ {\normalsize I}NFORMATION}
+\begin{minipage}{0.58\textwidth}
+\vspace{-2.4em}
+San Diego, CA, USA
+\end{minipage}
+\begin{minipage}{0.38\textwidth}
+\begin{tabbing}
+\textit{Phone:} \= (+1) 443-630-2422\\
+\textit{Email:} \> \href{mailto:rajeevyasarla19@gmail.com}{rajeevyasarla19@gmail.com}\\
+\textit{Web:} \> \href{https://rajeevyasarla.github.io/rajeev.github.io}{Homepage} \quad
+\href{https://scholar.google.com/citations?user=R8dwrxEAAAAJ&hl=en}{Google Scholar}\\
+\textit{} \> \href{https://www.linkedin.com/in/rajeev-yasarla-7275205b/}{LinkedIn}
+\end{tabbing}
+\end{minipage}
+\vspace{-1.5em}
+
+\section{\footnotesize {\large R}ESEARCH {\large P}ROFILE}
+Computer vision and machine learning researcher developing \textbf{predictive visual intelligence for robust embodied agents}. My work connects uncertainty-aware and data-efficient learning, temporal and 3D/4D scene understanding, vision--language--action models, and latent world models to prediction, planning, and control under distribution shift. As a Staff Researcher at Qualcomm AI Research, I lead projects in end-to-end autonomous driving, world-action modeling, multimodal learning, and dynamic 3D perception. My research has appeared in NeurIPS, CVPR, ICCV, ECCV, ICML, WACV, IEEE TIP, and IEEE TPAMI and received the \textbf{Best Paper Award at IEEE ICIP 2021}.
+
+\vspace{-0.7em}
+\section{\footnotesize {\large R}ESEARCH {\large I}MPACT}
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt]
+    \item \href{https://scholar.google.com/citations?user=R8dwrxEAAAAJ&hl=en}{Google Scholar}: \textbf{3,335 citations}, \textbf{h-index 20}, and \textbf{i10-index 21} (October 30, 2026).
+    \item Highly cited contributions include \textit{TransWeather} (879 citations), uncertainty-guided image deraining (470), \textit{JHU-CROWD++} (446), domain-adaptive object detection (290), and \textit{Syn2Real} (272), as of October 30, 2026.
+    \item Recent first-author work includes \textit{RoCA} (ICML 2026), \textit{Generative Scenario Rollouts} (NeurIPS 2026), and \textit{MAPLE} (NeurIPS 2026); the latter two improve closed-loop driving through language-conditioned and reactive multi-agent latent rollouts.
+    \item \textbf{Translation and broader impact:} end-to-end driving and VLA demonstrations at NeurIPS 2025, CES 2026, and CVPR 2026, \textbf{five granted U.S. patents}, and four pending applications; robust perception and data-efficient medical imaging support safer mobility and assistive applications.
+\end{itemize}
+
+\vspace{-0.8em}
+\section{\footnotesize {\large R}ESEARCH {\large A}REAS}
+Robust and trustworthy computer vision; embodied AI; vision-language-action and world models; data-efficient and self-supervised learning; 3D/4D and dynamic scene understanding; robotics and autonomous driving.
+
+\vspace{-0.7em}
+\section{\footnotesize {\large E}DUCATION}
+{\bf Johns Hopkins University, Baltimore, MD, USA} \hfill Sep 2018 -- May 2022\vspace{.4mm}\\
+Ph.D. in Electrical Engineering\\
+Advisor: Prof. Vishal M. Patel\\
+Thesis: \href{https://jscholarship.library.jhu.edu/items/8f0ebb3d-4142-4c67-a191-35776fe15014}{Deep Learning-Based Approaches for Image Restoration}\\
+{\bf Indian Institute of Technology Madras, Chennai, India} \hfill Jul 2011 -- May 2016\vspace{.4mm}\\
+B.Tech. and M.Tech. in Electrical Engineering\\
+Advisor: Prof. A. N. Rajagopalan\\
+Thesis: \href{https://eescholars.iitm.ac.in/sites/default/files/eethesis/ee11b080.pdf}{Pedestrian Detection and Tracking for Driver Assistance}
+
+\vspace{-1.em}
+\section{\footnotesize {\normalsize R}ESEARCH\\ {\normalsize E}XPERIENCE}
+{\bf Staff Researcher, Qualcomm AI Research} \hfill Nov 2022 -- Present\\
+\vspace{-1.em}
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item Lead research on end-to-end autonomous driving and embodied agents, including \textit{RoCA}, \textit{GeRo}, and \textit{MAPLE} for cross-domain adaptation, future generation, and reactive multi-agent learning.
+    \item On Bench2Drive, GeRo raises driving score by 15.7 points and success rate by 26.2 points; MAPLE raises driving score by over 25\% using latent multi-agent interaction.
+    \item Develop world-action models that map multi-view video into compact map, agent, and goal states, learn action-conditioned latent dynamics, and connect predicted states to policy learning.
+    \item Led dynamic 3D perception research spanning video depth estimation, multi-camera 3D object detection, and multimodal model distillation, resulting in publications at ICCV, ECCV, and CVPR and multiple patent applications.
+    \item Led live end-to-end autonomous driving and VLA research demonstrations at NeurIPS 2025, CES 2026, and CVPR 2026.
+\end{itemize}
+\vspace{-.6em}
+{\bf Computer Vision Research Scientist, AIBEE} \hfill May 2022 -- Oct 2022\\
+\vspace{-1.em}
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item Conducted research on single-view joint object detection and tracking for visual perception systems.
+\end{itemize}
+{\bf Ph.D. Researcher, Johns Hopkins University} \hfill Aug 2018 -- Mar 2022\\
+\vspace{-1.em}
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item Developed uncertainty-aware, semi-supervised, and self-supervised methods for image restoration and robust perception under adverse weather, atmospheric turbulence, blur, noise, and low light.
+    \item Contributed to domain-adaptive object detection, crowd understanding, salient object detection, face enhancement, and data-efficient medical image analysis.
+\end{itemize}
+\vspace{-.6em}
+{\bf Research Intern, AIBEE} \hfill May 2021 -- Aug 2021\\
+\vspace{-1.em}
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item Developed methods for unsupervised salient object detection, including pseudo-label generation and task-specific data augmentation.
+\end{itemize}
+\vspace{-.6em}
+{\bf Research Intern, Microsoft} \hfill May 2020 -- Aug 2020\\
+\vspace{-1.em}
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item Developed neural methods for face enhancement under noise, blur, and low-light degradations.
+    \item Contributed to patented technology: \href{https://patents.google.com/patent/US11526972B2/en}{US Patent 11,526,972}.
+\end{itemize}
+\vspace{-.6em}
+{\bf Research Assistant, Indian Institute of Science} \hfill Sep 2017 -- Jul 2018\\
+\vspace{-1.em}
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item Conducted research on deep learning methods for joint image denoising and deblurring.
+\end{itemize}
+\vspace{-.6em}
+{\bf Master's Thesis Researcher, IIT Madras} \hfill Jun 2015 -- May 2016\\
+\vspace{-1.em}
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item Developed computer vision algorithms for driver-assistance pedestrian and object detection.
+\end{itemize}
+
+\vspace{-0.8em}
+\section{\footnotesize {\large R}ESEARCH\\ {\large H}IGHLIGHTS}
+\begin{itemize}[leftmargin=*,itemsep=2pt,topsep=2pt]
+    \item \textbf{Predictive embodied intelligence.} Developed VLA and driving methods for cross-domain adaptation, language-conditioned future generation, and reactive multi-agent learning: \textit{RoCA}, \textit{GeRo}, \textit{MAPLE}, and multimodal-LLM distillation.
+    \item \textbf{Temporal and 3D/4D visual understanding.} Developed memory, prediction, state-space, and generative methods for video depth, multi-camera 3D detection, and text-to-3D: \textit{MAMo}, \textit{FutureDepth}, \textit{DySS}, and \textit{HexaGen3D}.
+    \item \textbf{Robust and data-efficient learning.} Introduced uncertainty-aware and Gaussian-process methods for restoration, adverse-weather perception, domain adaptation, crowd understanding, and medical imaging. This work includes the IEEE ICIP 2021 Best Paper and several papers with more than 250 citations each.
+\end{itemize}
+
+\vspace{-0.8em}
+\section{\footnotesize {\large T}EACHING\\ {\large A}ND {\large M}ENTORING}
+{\bf Introduction to Digital Signal Processing}, Johns Hopkins University \hfill 2019 -- 2021\\
+Teaching Assistant; Course Instructor: Prof. Vishal M. Patel\\
+{\bf Data Structures and Algorithms}, IIT Madras \hfill Spring 2016\\
+Teaching Assistant; Course Instructor: Prof. G. Venkatesh\\
+{\bf Basic Electrical Engineering}, IIT Madras \hfill Fall 2015\\
+Teaching Assistant; Course Instructor: Prof. Ananth Krishnan\\
+{\bf Research Mentoring and Supervision}, Qualcomm AI Research \hfill 2022 -- Present\\
+Mentor graduate researchers and interns from problem formulation through publication, including external Ph.D. students through the Qualcomm Innovation Fellowship.
+
+\newpage
+\section{\footnotesize {\large A}WARDS {\large A}ND {\large H}ONORS}
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt]
+    \item \textbf{Best Paper Honorable Mention Award at ECCV workshop SDAD 2026}; honorable mention, Wearables AI Workshop, ECCV 2026.
+    \item \textbf{Best Paper Award}, IEEE International Conference on Image Processing (IEEE ICIP), 2021.
+    \item Ranked in the top $0.4\%$ among nearly one million students in IIT-JEE 2011.
+    \item First Prize, National Fox Hunt Event, Shaastra 2013, technical festival of IIT Madras.
+\end{itemize}
+
+\vspace{-0.8em}
+\section{\footnotesize {\large F}ELLOWSHIPS {\large A}ND\\ {\large R}ESEARCH {\large S}UPPORT}
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt]
+    \item Student Travel Grant, ICCV 2019, awarded by UIUC in association with the ICCV organizing committee.
+    \item Merit-cum-Means Scholarship, Indian Institute of Technology Madras.
+    \item Fully funded doctoral research support, Johns Hopkins University, 2018--2022.
+\end{itemize}
+
+\vspace{-0.8em}
+\section{\footnotesize {\large S}ERVICE {\large A}ND\\ {\large L}EADERSHIP}
+\textbf{Workshop Organizer:} \href{https://varworkshop.github.io/organizers/}{Vision-based Assistants in the Real World (VAR) Workshop}, CVPR 2026; collaborating with academic and industry organizers to build a forum on visual assistants in real-world settings.\\
+\textbf{Area Chair:} IEEE Winter Conference on Applications of Computer Vision (WACV), 2027.\\
+\textbf{Reviewer:} NeurIPS, ICLR, CVPR, ICCV, ECCV, WACV, IEEE TIP, IJCV, AVSS, Pattern Recognition Letters, and IEEE Signal Processing Magazine.\\
+\textbf{Leadership and Outreach:} Lead Coordinator, Shaastra Circuit Design Challenge, IIT Madras, 2014; Team Lead, receiver-design team, National Fox Hunt Event, First Prize, Shaastra 2013.
+
+\vspace{-0.8em}
+\section{\footnotesize {\large P}ATENTS}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,topsep=2pt]
+    \item \textit{Test-Time Self-Supervised Guidance for Diffusion Models}, U.S. Patent 12,738,035, 2026. Co-inventor.
+    \item \textit{3D Reconstruction Using 3D Triplane Representation}, U.S. Patent 12,700,181, granted August 4, 2026. Co-inventor.
+    \item \textit{Depth Estimation Based on Feature Reconstruction with Adaptive Masking and Motion Prediction}, U.S. Patent 12,694,550, granted July 28, 2026. Lead-inventor.
+    \item \textit{Unified Simultaneous Optical Flow and Depth Estimation}, U.S. Patent 12,561,822, granted February 24, 2026. Co-inventor.
+    \item \textit{Simultaneously Correcting Image Degradations of Multiple Types in an Image of a Face}.\\ U.S. Patent 11,526,972, 2022. Co-inventor.
+    \item \textit{Language-Grounded Vehicle Path Planning}, U.S. Patent App. 18/934,765, 2026. Lead-inventor.
+    \item \textit{Three-Dimensional Object Detection Using State-Space Spatiotemporal Learning and Dynamic Queries}, U.S. Patent App. 18/882,586, 2026. Lead-inventor.
+    \item \textit{Memory-Oriented Gaussian Process-Based Multi-Object Tracking}.\\ U.S. Patent App. 18/339,408, 2024. Lead-inventor.
+    \item \textit{Monocular Image Depth Estimation with Attention}, U.S. Patent App. 18/538,869, 2024. Lead-inventor.
+\end{enumerate}
+
+\vspace{-0.8em}
+\section{\footnotesize {\large P}REPRINTS}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,topsep=2pt]
+    \item S Mahajan, S Kadambi, H Le, \textbf{R Yasarla}, A Bhattacharyya, M Hayat, et al., \textit{\href{https://arxiv.org/abs/2512.13609}{Do-Undo Bench: Reversibility for Action Understanding in Image Generation}}, arXiv, 2025.
+\end{enumerate}
+
+\vspace{-0.8em}
+\section{\footnotesize {\large C}ONFERENCE {\large P}UBLICATIONS}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,topsep=2pt]
+    \item \textbf{R Yasarla}, D Hegde, H Cheng, S Han, Y Shi, M Sadeghigooghari, Hanno Ackermann, L Liu, Pranav Desai, F Porikli, M Ghavamzadeh, H Cai, \textit{\href{https://arxiv.org/pdf/2605.14201v3}{MAPLE: Latent Multi-Agent Play for End-to-End Autonomous Driving}}, \textbf{NeurIPS}, 2026. Accepted.
+    \item \textbf{R Yasarla}, D Hegde, S Han, H Cheng, Y Shi, M Sadeghigooghari, S Mahajan, A Bhattacharyya, L Liu, R Garrepalli, T Svantesson, F Porikli, M Ghavamzadeh, H Cai, \textit{\href{https://arxiv.org/pdf/2601.11475v2}{Generative Scenario Rollouts for End-to-End Autonomous Driving}}, \textbf{NeurIPS}, 2026. Accepted.
+    \item \textbf{R Yasarla}, S Han, H Cheng, A Bhattacharyya, S Mahajan, L Liu, Y Shi, R Garrepalli, H Cai, F Porikli, \textit{\href{https://arxiv.org/pdf/2506.10145v3}{RoCA: Robust Cross-Domain End-to-End Autonomous Driving}}, \textbf{ICML}, 2026.
+    \item A Bhattacharyya, S Mahajan, S Haresh, \textbf{R Yasarla}, R Pourreza, L Liu, et al., \textit{\href{https://arxiv.org/abs/2606.09547}{Streaming Interventions: Can Video Large Language Models Correct Mistakes as They Occur?}}, \textbf{ECCV Workshops (Wearables AI)}, 2026.
+    \item D Hegde$^{*}$, \textbf{R Yasarla$^{*}$}, H Cai, S Han, A Bhattacharyya, S Mahajan, L Liu, R Garrepalli, V Patel, F Porikli, \textit{\href{https://openaccess.thecvf.com/content/CVPR2025/papers/Hegde_Distilling_Multi-modal_Large_Language_Models_for_Autonomous_Driving_CVPR_2025_paper.pdf}{Distilling Multi-modal Large Language Models for Autonomous Driving}}, \textbf{CVPR}, 2025. $^{*}$Equal contribution.
+    \item \textbf{R Yasarla}, S Han, H Cai, F Porikli, \textit{\href{https://openaccess.thecvf.com/content/CVPR2025W/WAD/papers/Yasarla_DySS_Dynamic_Queries_and_State-Space_Learning_for_Efficient_3D_Object_CVPRW_2025_paper.pdf}{DySS: Dynamic Queries and State-Space Learning for Efficient 3D Object Detection from Multi-Camera Videos}}, \textbf{CVPR Workshops}, 2025.
+    \item A Mercier, R Nakhli, M Reddy, \textbf{R Yasarla}, H Cai, F Porikli, G Berger, \textit{HexaGen3D: StableDiffusion Is One Step Away from Fast and Diverse Text-to-3D Generation}, \textbf{WACV}, 2025.
+    \item \textbf{R Yasarla}, MK Singh, H Cai, Y Shi, J Jeong, Y Zhu, S Han, R Garrepalli, F Porikli, \textit{\href{https://arxiv.org/pdf/2403.12953.pdf}{FutureDepth: Learning to Predict the Future Improves Video Depth Estimation}}, \textbf{ECCV}, 2024.
+    \item \textbf{R Yasarla}, J.M.J. Valanarasu, V.M. Patel, \textit{\href{https://openaccess.thecvf.com/content/WACV2024/papers/Yasarla_Self-Supervised_Denoising_Transformer_With_Gaussian_Process_WACV_2024_paper.pdf}{Self-Supervised Denoising Transformer with Gaussian Process}}, \textbf{WACV}, 2024.
+    \item \textbf{R Yasarla}, R Weng, W Choi, V Patel, A Sadeghian, \textit{\href{https://arxiv.org/pdf/2203.04478.pdf}{3SD: Self-Supervised Saliency Detection with No Labels}}, \textbf{WACV}, 2024.
+    \item \textbf{R Yasarla}, H Cai, J Jeong, Y Shi, R Garrepalli, F Porikli, \textit{\href{https://arxiv.org/pdf/2307.14336.pdf}{MAMo: Leveraging Memory and Attention for Monocular Video Depth Estimation}}, \textbf{ICCV}, 2023.
+    \item \textbf{R Yasarla}, C.E. Priebe, V.M. Patel, \textit{\href{https://arxiv.org/pdf/2203.09275.pdf}{ART-SS: An Adaptive Rejection Technique for Semi-Supervised Restoration for Adverse Weather-Affected Images}}, \textbf{ECCV}, 2022.
+    \item J.M.J. Valanarasu, \textbf{R Yasarla}, V.M. Patel, \textit{\href{https://openaccess.thecvf.com/content/CVPR2022/papers/Valanarasu_TransWeather_Transformer-Based_Restoration_of_Images_Degraded_by_Adverse_Weather_Conditions_CVPR_2022_paper.pdf}{TransWeather: Transformer-Based Restoration of Images Degraded by Adverse Weather Conditions}}, \textbf{CVPR}, 2022.
+    \item \textbf{R Yasarla}, V.A. Sindagi, V.M. Patel, \textit{\href{https://arxiv.org/pdf/2204.10970.pdf}{Unsupervised Restoration of Weather-Affected Images Using Deep Gaussian Process-Based CycleGAN}}, \textbf{ICPR}, 2022. \textbf{Oral presentation}.
+    \item N.G. Nair, \textbf{R Yasarla}, V.M. Patel, \textit{\href{https://ieeexplore.ieee.org/abstract/document/9897543}{NBD-GAP: Non-Blind Image Deblurring without Clean Target Images}}, \textbf{IEEE ICIP}, 2022.
+    \item \textbf{R Yasarla}, H.V. Joze, V.M. Patel, \textit{\href{https://arxiv.org/abs/2105.06528}{Network Architecture Search for Face Enhancement}}, \textbf{EUSIPCO}, 2022. \textbf{Oral presentation}.
+    \item \textbf{R Yasarla}, V.M. Patel, \textit{\href{https://ieeexplore.ieee.org/abstract/document/9506614}{Learning to Restore Images Degraded by Atmospheric Turbulence Using Uncertainty}}, \textbf{IEEE ICIP}, 2021. \textbf{Best Paper Award}.
+    \item \textbf{R Yasarla}, V.A. Sindagi, V.M. Patel, \textit{\href{http://openaccess.thecvf.com/content_CVPR_2020/html/Yasarla_Syn2Real_Transfer_Learning_for_Image_Deraining_Using_Gaussian_Processes_CVPR_2020_paper.html}{Syn2Real Transfer Learning for Image Deraining Using Gaussian Processes}}, \textbf{CVPR}, 2020. \textbf{Oral presentation}.
+    \item V.A. Sindagi$^{*}$, P Oza$^{*}$, \textbf{R Yasarla}, V.M. Patel, \textit{\href{https://arxiv.org/pdf/1912.00070.pdf}{Prior-Based Domain Adaptive Object Detection for Adverse Weather Conditions}}, \textbf{ECCV}, 2020.
+    \item V.A. Sindagi, \textbf{R Yasarla}, D S Babu, R. V. Babu, V.M. Patel, \textit{\href{https://arxiv.org/pdf/2007.03195.pdf}{Learning to Count in the Crowd from Limited Labeled Data}}, \textbf{ECCV}, 2020.
+    \item \textbf{R Yasarla}, V.M. Patel, \textit{\href{https://arxiv.org/pdf/1906.11129.pdf}{Uncertainty Guided Multi-Scale Residual Learning Using a Cycle Spinning CNN for Single Image Deraining}}, \textbf{CVPR}, 2019.
+    \item V.A. Sindagi, \textbf{R Yasarla}, V.M. Patel, \textit{\href{https://openaccess.thecvf.com/content_ICCV_2019/html/Sindagi_Pushing_the_Frontiers_of_Unconstrained_Crowd_Counting_New_Dataset_and_ICCV_2019_paper.html}{Pushing the Frontiers of Unconstrained Crowd Counting: New Dataset and Benchmark Method}}, \textbf{ICCV}, 2019.
+    \item N.J. Myers, \textbf{R Yasarla}, \textit{Analysis of 8-Point Constellations: Optimality and Recovery}, \textbf{IEEE ICSC}, 2016.
+\end{enumerate}
+
+\section{\footnotesize {\large J}OURNAL {\large P}UBLICATIONS}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,topsep=2pt]
+    \item \textbf{R Yasarla}, V.M. Patel, \textit{\href{https://arxiv.org/pdf/2007.08404.pdf?ref=https://githubhelp.com}{CNN-Based Restoration of a Single Face Image Degraded by Atmospheric Turbulence}}, \textbf{IEEE TBIOM}, 2022.
+    \item \textbf{R Yasarla}, V.A. Sindagi, V.M. Patel, \textit{\href{https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9489290}{Semi-Supervised Image Deraining Using Gaussian Processes}}, \textbf{IEEE TIP}, 2021.
+    \item V.A. Sindagi, \textbf{R Yasarla}, V.M. Patel, \textit{\href{https://ieeexplore.ieee.org/abstract/document/9248596}{JHU-CROWD++: Large-Scale Crowd Counting Dataset and a Benchmark Method}}, \textbf{IEEE TPAMI}, 2020.
+    \item \textbf{R Yasarla}, V.M. Patel, \textit{\href{https://arxiv.org/pdf/1909.04207.pdf}{Confidence Measure Guided Single Image Deraining}}, \textbf{IEEE TIP}, 2020.
+    \item \textbf{R Yasarla}, F Perazzi, V.M. Patel, \textit{\href{https://arxiv.org/pdf/1907.13106.pdf}{Deblurring Face Images Using Uncertainty Guided Multi-Stream Semantic Networks}}, \textbf{IEEE TIP}, 2020.
+    \item \textbf{R Yasarla$^{*}$}, J.M.J. Valanarasu$^{*}$, V.M. Patel, \textit{\href{https://arxiv.org/pdf/2010.10661.pdf}{Exploring Overcomplete Representations for Single Image Deraining Using CNNs}}, \textbf{IEEE JSTSP}, 2020.
+    \item J.M.J. Valanarasu, \textbf{R Yasarla}, P Wang, I Hacihaliloglu, V.M. Patel, \textit{\href{https://ieeexplore.ieee.org/abstract/document/9113237}{Learning to Segment Brain Anatomy from 2D Ultrasound with Less Data}}, \textbf{IEEE JSTSP}, 2020.
+    \item P Guo, P Wang, \textbf{R Yasarla}, J Zhou, V.M. Patel, S Jiang, \textit{Anatomic and Molecular MR Image Synthesis Using Confidence-Guided CNNs}, \textbf{IEEE TMI}, 2020.
+\end{enumerate}
+
+\vspace{-0.8em}
+\section{\footnotesize {\large B}OOK {\large C}HAPTER}
+\begin{enumerate}[leftmargin=*,itemsep=0pt,topsep=2pt]
+    \item \textbf{R Yasarla}, F Perazzi, V.M. Patel, \textit{\href{https://link.springer.com/chapter/10.1007/978-3-030-74697-1_5}{Deblurring Face Images Using Deep Networks}}, in \textit{Deep Learning-Based Face Analytics}, Advances in Computer Vision and Pattern Recognition, 2021.
+\end{enumerate}
+
+\vspace{-0.8em}
+\section{\footnotesize {\large T}ECHNICAL {\large S}KILLS}
+\textbf{Programming:} Python, C, \Cplusplus\\
+\textbf{Machine Learning and Vision:} PyTorch, TensorFlow, OpenCV, MATLAB\\
+\textbf{Tools:} \LaTeX, research prototyping, deep learning model development, computer vision system evaluation
+
+\vspace{-0.8em}
+\section{\footnotesize {\large S}ELECTED {\large T}ALKS\\ {\large A}ND {\large D}EMOS}
+\begin{itemize}[leftmargin=*,itemsep=1pt,topsep=2pt]
+    \item Live demonstrations of end-to-end autonomous driving and vision--language--action systems, NeurIPS 2025, CES 2026, and CVPR 2026.
+    \item Oral presentation, \textit{Syn2Real Transfer Learning for Image Deraining Using Gaussian Processes}, CVPR 2020.
+    \item Oral presentations on self-supervised restoration and face enhancement, ICPR 2022 and EUSIPCO 2022.
+\end{itemize}
+
+\end{document}

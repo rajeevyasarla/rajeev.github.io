@@ -1,0 +1,6 @@
+# Generated TeX build files (the public PDF is intentionally versioned).
+files/*.log
+files/*.aux
+files/*.out
+files/*.synctex.gz
+__pycache__/

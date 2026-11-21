@@ -1,6 +1,7 @@
 @inproceedings{yasarla2026roca,
   title={RoCA: Robust Cross-Domain End-to-End Autonomous Driving},
-  author={Yasarla, Rajeev and Han, Shizhong and Cheng, Hsin-Pai and Liu, Litian and Mahajan, Shweta and Bhattacharyya, Apratim and Shi, Yunxiao and Garrepalli, Risheek and Cai, Hong and Porikli, Fatih},
+  author={Yasarla, Rajeev and Han, Shizhong and Cheng, Hsin-Pai and Bhattacharyya, Apratim and Mahajan, Shweta and Liu, Litian and Shi, Yunxiao and Garrepalli, Risheek and Cai, Hong and Porikli, Fatih},
   booktitle={Proceedings of the International Conference on Machine Learning},
-  year={2026}
+  year={2026},
+  url={https://arxiv.org/abs/2506.10145v3}
 }

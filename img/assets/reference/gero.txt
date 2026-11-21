@@ -1,7 +1,8 @@
-@inproceedings{hegde2025distilling,
+@inproceedings{yasarla2026gero,
   title={Generative Scenario Rollouts for End-to-End Autonomous Driving},
-  author={Yasarla, Rajeev and Hegde, Deepti and Han, Shizhong and Cheng, Hsin-Pai and Shi, Yunxiao and Sadeghigooghari, Meysam and Mahajan, Shweta and Bhattacharyya, Apratim and Liu, Litian and Garrepalli, Risheek and others},
+  author={Yasarla, Rajeev and Hegde, Deepti and Han, Shizhong and Cheng, Hsin-Pai and Shi, Yunxiao and Sadeghigooghari, Meysam and Mahajan, Shweta and Bhattacharyya, Apratim and Liu, Litian and Garrepalli, Risheek and Svantesson, Thomas and Porikli, Fatih and Ghavamzadeh, Mohammad and Cai, Hong},
   booktitle={Advances in Neural Information Processing Systems},
   year={2026},
-  note={Accepted}
+  note={Accepted},
+  url={https://arxiv.org/abs/2601.11475v2}
 }
