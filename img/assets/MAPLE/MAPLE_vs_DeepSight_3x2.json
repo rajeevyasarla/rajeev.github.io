@@ -1,0 +1,88 @@
+{
+  "video": "MAPLE_vs_DeepSight_3x2.mp4",
+  "poster": "MAPLE_vs_DeepSight_3x2.jpg",
+  "duration_seconds": 20,
+  "frame_rate": 12,
+  "total_frames": 240,
+  "dimensions": [
+    1920,
+    1620
+  ],
+  "grid_rows": 3,
+  "grid_columns": 2,
+  "row_dimensions": [
+    1920,
+    540
+  ],
+  "method_columns": [
+    "MAPLE",
+    "DeepSight"
+  ],
+  "reference_format": "RoCA: 1920x1620, 20 seconds",
+  "playback_speed_vs_simulation": 2,
+  "same_elapsed_simulation_time_per_method_pair": true,
+  "edits": "Three continuous 20-second excerpts shown simultaneously. Crop removes each source's separate outer title/footer bands, not its driving panel. No image scaling, extra speedup, or motion interpolation. RoCA-style method/scenario badges added.",
+  "interpretation": "Selected simulated routes, not aggregate benchmark evidence. Different rows have different start times; methods within each row remain synchronized. Incomplete DeepSight result statuses are not classified as failures.",
+  "source_segments": [
+    {
+      "source": "MAPLE_vs_DeepSight_25424_construction_obstacles.mp4",
+      "source_sha256": "671cc540568deda3f9380e4f44f28183965080729b8c5eb968457a9cce29a62e",
+      "case": "25424",
+      "scenario": "Construction obstacles",
+      "grid_row": 1,
+      "source_start_seconds": 9,
+      "source_end_seconds": 29,
+      "output_start_seconds": 0,
+      "output_end_seconds": 20,
+      "nominal_simulation_start_seconds": 18,
+      "nominal_simulation_end_seconds": 58,
+      "crop": {
+        "x": 0,
+        "y": 60,
+        "width": 1920,
+        "height": 540
+      }
+    },
+    {
+      "source": "MAPLE_vs_DeepSight_27494_blocked_intersection.mp4",
+      "source_sha256": "ca9fcd77390824225eee9eda86b5cb86cd39de6711e4e893f4e72c5f972d7895",
+      "case": "27494",
+      "scenario": "Blocked intersection",
+      "grid_row": 2,
+      "source_start_seconds": 3,
+      "source_end_seconds": 23,
+      "output_start_seconds": 0,
+      "output_end_seconds": 20,
+      "nominal_simulation_start_seconds": 6,
+      "nominal_simulation_end_seconds": 46,
+      "crop": {
+        "x": 0,
+        "y": 60,
+        "width": 1920,
+        "height": 540
+      }
+    },
+    {
+      "source": "MAPLE_vs_DeepSight_28198_left_turn_into_traffic.mp4",
+      "source_sha256": "aaa3e9759e49e4e0ca7a5303215190bb68d8831535ea69cb69c0e8f3e945e97b",
+      "case": "28198",
+      "scenario": "Left turn into traffic",
+      "grid_row": 3,
+      "source_start_seconds": 23,
+      "source_end_seconds": 43,
+      "output_start_seconds": 0,
+      "output_end_seconds": 20,
+      "nominal_simulation_start_seconds": 46,
+      "nominal_simulation_end_seconds": 86,
+      "crop": {
+        "x": 0,
+        "y": 60,
+        "width": 1920,
+        "height": 540
+      }
+    }
+  ],
+  "video_sha256": "7184b28e386e9b8d32da8c160dbaae49a2827e9d7ac081c4050f98d4cd72a316",
+  "poster_sha256": "af00020ca969a85933e80d06234d4e2bcbbaa2213087e5ba47cadc646a911959",
+  "video_bytes": 10173690
+}

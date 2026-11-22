@@ -62,7 +62,7 @@
     .publication-figure { width: 100%; max-height: 180px; object-fit: contain; border: 1px solid #e6edf2; border-radius: .5rem; background: #f8fafc; }
     .pub-note { font-size: .72rem; letter-spacing: .02em; vertical-align: middle; }
     .research-card { height: 100%; padding: 1.5rem; border: 1px solid #e6edf2; border-radius: .5rem; background: #f8fafc; }
-    .demo-video { display: block; width: 100%; max-height: 480px; background: #111; border-radius: .5rem; }
+    .demo-video { display: block; width: 100%; height: auto; aspect-ratio: 32 / 27; object-fit: contain; background: #111; border-radius: .5rem; }
     .skip-link { position: fixed; top: -5rem; left: 1rem; z-index: 1100; padding: .75rem 1rem; background: #fff; color: #003b5c; }
     .skip-link:focus { top: .5rem; }
   </style>
@@ -275,24 +275,24 @@
       <div class="row g-4">
         <div class="col-12 col-md-6">
           <article>
-            <h3 class="h5">MAPLE vs DeepSight: Scenario highlights</h3>
-            <video class="demo-video" controls playsinline preload="none" poster="img/assets/MAPLE/MAPLE_vs_DeepSight_highlights.jpg" aria-label="MAPLE and DeepSight synchronized driving comparison across three simulated scenarios">
-              <source src="img/assets/MAPLE/MAPLE_vs_DeepSight_highlights.mp4" type="video/mp4">
+            <h3 class="h5">MAPLE vs DeepSight</h3>
+            <video class="demo-video" controls playsinline preload="none" poster="img/assets/MAPLE/MAPLE_vs_DeepSight_3x2.jpg" width="1920" height="1620" aria-label="Three-row, two-column video: MAPLE left and DeepSight right across three synchronized simulated scenarios">
+              <source src="img/assets/MAPLE/MAPLE_vs_DeepSight_3x2.mp4" type="video/mp4">
               Your browser does not support embedded video.
             </video>
-            <p class="mt-2 mb-1">27-second comparison: construction obstacles, a blocked intersection, and a left turn into traffic. Synchronized views at 2&times; playback.</p>
+            <p class="mt-2 mb-1">20-second, 3&times;2 comparison: construction obstacles, a blocked intersection, and a left turn into traffic shown together. Each method pair is synchronized at 2&times; playback.</p>
             <p class="mb-0"><a href="https://arxiv.org/pdf/2605.14201v3" target="_blank" rel="noopener noreferrer">Paper</a>
-              &middot; <a href="img/assets/MAPLE/MAPLE_vs_DeepSight_highlights.mp4">Open demo video</a></p>
+              &middot; <a href="img/assets/MAPLE/MAPLE_vs_DeepSight_3x2.mp4">Open demo video</a></p>
           </article>
         </div>
         <div class="col-12 col-md-6">
           <article>
-            <h3 class="h5">RoCA: Cross-domain autonomous driving</h3>
-            <video class="demo-video" controls playsinline preload="none" poster="img/assets/RoCA/ROCA_main.png" aria-label="RoCA and ORION closed-loop driving comparison">
+            <h3 class="h5">ORION with and without RoCA</h3>
+            <video class="demo-video" controls playsinline preload="none" poster="img/assets/RoCA/RoCA_vs_ORION_3x2.jpg" width="1920" height="1620" aria-label="Three-scenario comparison of ORION with RoCA versus the ORION baseline without RoCA">
               <source src="img/assets/RoCA/RoCA_vs_ORION_all_scenarios_vertical.mp4" type="video/mp4">
               Your browser does not support embedded video.
             </video>
-            <p class="mt-2 mb-1">A research comparison of RoCA and ORION across driving scenarios.</p>
+            <p class="mt-2 mb-1">Three driving scenarios comparing ORION + RoCA (left) with the ORION baseline without RoCA (right).</p>
             <p class="mb-0"><a href="https://arxiv.org/pdf/2506.10145v3" target="_blank" rel="noopener noreferrer">Paper</a>
               &middot; <a href="img/assets/RoCA/RoCA_vs_ORION_all_scenarios_vertical.mp4">Open demo video</a></p>
           </article>

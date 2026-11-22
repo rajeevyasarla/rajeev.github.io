@@ -36,18 +36,28 @@ in a remote URL, source file, or commit.
 
 ## MAPLE comparison demo
 
-The homepage includes one 27-second MAPLE vs DeepSight reel, combining continuous
-nine-second highlights from construction obstacles, a blocked intersection, and
-a left turn into traffic. It retains the source comparison's synchronized views,
-method labels, simulation timestamps, bird's-eye insets, and 2x playback. These
-selected simulated routes are illustrative, not aggregate benchmark evidence;
-incomplete DeepSight result statuses are not classified as failures.
+The homepage uses RoCA's 3-row × 2-column video format: construction obstacles,
+a blocked intersection, and a left turn into traffic appear simultaneously,
+with MAPLE left and DeepSight right. The video matches RoCA's 1920x1620 dimensions
+and 20-second duration. Each row is one continuous excerpt retaining its
+synchronized method pair, simulation timestamps, speeds, bird's-eye insets, and
+2x playback. Scenario rows use different start times. These selected simulated
+routes are illustrative, not aggregate benchmark evidence; incomplete DeepSight
+result statuses are not classified as failures.
 
 To reproduce it from the existing comparison exports (without overwriting assets):
 
 ```bash
-python3 scripts/build_maple_demo.py /path/to/visualization/MAPLE_vs_DeepSight
+python3 scripts/build_maple_grid_demo.py /path/to/visualization/MAPLE_vs_DeepSight
 ```
 
 The MP4 uses H.264/yuv420p with fast-start metadata and no audio. The matching
 JSON records source hashes, excerpt times, output hashes, and encoding properties.
+The earlier sequential 27-second reel and its builder remain available locally
+but are no longer embedded on the homepage. Original comparison recordings and
+the RoCA video are unchanged.
+
+The RoCA card explicitly describes the comparison as ORION + RoCA (left) versus
+the ORION baseline without RoCA (right), following the applicant's clarification.
+Both cards use a 1920x1620 comparison-frame poster; the RoCA poster is extracted
+from the unchanged existing RoCA video at five seconds.
